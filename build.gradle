@@ -16,21 +16,13 @@ java {
 
 repositories {
     mavenCentral()
+    // Vendored Blue Orange artifacts (com.blueorange:commons, com.blueorange:passport-mono-sdk).
+    // These were published to private GitHub Packages repos; they are checked into
+    // blue_orange_dependencies/ as a local Maven repository so the project builds in
+    // automated pipelines (e.g. Railway) without GitHub Packages credentials.
     maven {
-        name = 'GitHubPackagesCommons'
-        url = uri('https://maven.pkg.github.com/Blue-Orange-Ai/java-commons')
-        credentials {
-            username = providers.gradleProperty('gpr.user').getOrNull() ?: System.getenv('GITHUB_ACTOR')
-            password = providers.gradleProperty('gpr.key').getOrNull() ?: System.getenv('GITHUB_TOKEN')
-        }
-    }
-    maven {
-        name = 'GitHubPackagesPassportMono'
-        url = uri('https://maven.pkg.github.com/Blue-Orange-Ai/passport-mono')
-        credentials {
-            username = providers.gradleProperty('gpr.user').getOrNull() ?: System.getenv('GITHUB_ACTOR')
-            password = providers.gradleProperty('gpr.key').getOrNull() ?: System.getenv('GITHUB_TOKEN')
-        }
+        name = 'BlueOrangeVendored'
+        url = uri("$rootDir/blue_orange_dependencies")
     }
 }
 
