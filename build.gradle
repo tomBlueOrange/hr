@@ -53,3 +53,63 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+// ---------------------------------------------------------------------------
+// Frontend build: compile the React app in frontend/ and bundle the output
+// into the jar's static/ folder so Spring Boot serves it from classpath:/static/.
+// ---------------------------------------------------------------------------
+import org.gradle.internal.os.OperatingSystem
+
+def frontendDir = file("$projectDir/frontend")
+def npmCommand = OperatingSystem.current().isWindows() ? 'npm.cmd' : 'npm'
+
+tasks.register('npmInstall', Exec) {
+    description = 'Installs frontend npm dependencies.'
+    workingDir = frontendDir
+    inputs.file("$frontendDir/package.json")
+    inputs.file("$frontendDir/package-lock.json")
+    outputs.dir("$frontendDir/node_modules")
+    commandLine npmCommand, 'ci'
+}
+
+tasks.register('buildFrontend', Exec) {
+    description = 'Builds the React frontend into frontend/build.'
+    dependsOn 'npmInstall'
+    workingDir = frontendDir
+    inputs.dir("$frontendDir/src")
+    inputs.dir("$frontendDir/public")
+    inputs.file("$frontendDir/package.json")
+    inputs.file("$frontendDir/package-lock.json")
+    outputs.dir("$frontendDir/build")
+    commandLine npmCommand, 'run', 'build'
+}
+
+processResources {
+    dependsOn 'buildFrontend'
+    from(file("$frontendDir/build")) {
+        into 'static'
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Docker: package the Spring Boot fat jar (frontend already bundled) into a
+// runnable image for the local Docker environment. Run `./gradlew dockerBuildImage`.
+// ---------------------------------------------------------------------------
+def dockerImageName = 'happyrobot'
+
+tasks.register('dockerBuildImage', Exec) {
+    group = 'docker'
+    description = 'Builds a Docker image (happyrobot:<version> + :latest) from the Spring Boot fat jar.'
+    dependsOn 'bootJar'
+    workingDir = projectDir
+
+    doFirst {
+        def jarFile = tasks.named('bootJar').get().archiveFile.get().asFile
+        def relativeJar = projectDir.toPath().relativize(jarFile.toPath()).toString()
+        commandLine 'docker', 'build',
+                '--build-arg', "JAR_FILE=${relativeJar}",
+                '-t', "${dockerImageName}:${project.version}",
+                '-t', "${dockerImageName}:latest",
+                '.'
+    }
+}

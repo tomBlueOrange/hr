@@ -1,0 +1,5 @@
+# The image only needs the pre-built fat jar, so exclude everything from the
+# build context (notably frontend/node_modules and .git, which are huge) and
+# allow back just the built jars.
+*
+!build/libs/*.jar

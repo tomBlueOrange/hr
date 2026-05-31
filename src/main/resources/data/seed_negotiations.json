@@ -1,0 +1,2410 @@
+[
+  {
+    "callRef": "C0015",
+    "proposedOffer": 1650.0,
+    "counter": 1500.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0015",
+    "proposedOffer": 1575.0,
+    "counter": 1525.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0015",
+    "proposedOffer": 1525.0,
+    "counter": 1550.0,
+    "accepted": true,
+    "acceptedAmount": 1500.0
+  },
+  {
+    "callRef": "C0249",
+    "proposedOffer": 1550.0,
+    "counter": 1350.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0262",
+    "proposedOffer": 1075.0,
+    "counter": 925.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0345",
+    "proposedOffer": 775.0,
+    "counter": 675.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0345",
+    "proposedOffer": 750.0,
+    "counter": 675.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0288",
+    "proposedOffer": 1425.0,
+    "counter": 1375.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0288",
+    "proposedOffer": 1400.0,
+    "counter": 1425.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0288",
+    "proposedOffer": 1350.0,
+    "counter": 1450.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0322",
+    "proposedOffer": 1250.0,
+    "counter": 1050.0,
+    "accepted": true,
+    "acceptedAmount": 1125.0
+  },
+  {
+    "callRef": "C0127",
+    "proposedOffer": 1225.0,
+    "counter": 1050.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0127",
+    "proposedOffer": 1175.0,
+    "counter": 1075.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0153",
+    "proposedOffer": 2875.0,
+    "counter": 2500.0,
+    "accepted": true,
+    "acceptedAmount": 2600.0
+  },
+  {
+    "callRef": "C0195",
+    "proposedOffer": 3525.0,
+    "counter": 2950.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0195",
+    "proposedOffer": 3475.0,
+    "counter": 3025.0,
+    "accepted": true,
+    "acceptedAmount": 2950.0
+  },
+  {
+    "callRef": "C0171",
+    "proposedOffer": 2825.0,
+    "counter": 2500.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0171",
+    "proposedOffer": 2750.0,
+    "counter": 2550.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0171",
+    "proposedOffer": 2650.0,
+    "counter": 2575.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0311",
+    "proposedOffer": 1025.0,
+    "counter": 950.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0311",
+    "proposedOffer": 975.0,
+    "counter": 975.0,
+    "accepted": true,
+    "acceptedAmount": 950.0
+  },
+  {
+    "callRef": "C0244",
+    "proposedOffer": 1050.0,
+    "counter": 900.0,
+    "accepted": true,
+    "acceptedAmount": 925.0
+  },
+  {
+    "callRef": "C0179",
+    "proposedOffer": 1475.0,
+    "counter": 1250.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0179",
+    "proposedOffer": 1400.0,
+    "counter": 1275.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0016",
+    "proposedOffer": 1025.0,
+    "counter": 850.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0016",
+    "proposedOffer": 1000.0,
+    "counter": 875.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0032",
+    "proposedOffer": 1050.0,
+    "counter": 925.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0032",
+    "proposedOffer": 1025.0,
+    "counter": 950.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0032",
+    "proposedOffer": 975.0,
+    "counter": 975.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0323",
+    "proposedOffer": 1150.0,
+    "counter": 1075.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0323",
+    "proposedOffer": 1100.0,
+    "counter": 1100.0,
+    "accepted": true,
+    "acceptedAmount": 1100.0
+  },
+  {
+    "callRef": "C0069",
+    "proposedOffer": 775.0,
+    "counter": 700.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0069",
+    "proposedOffer": 750.0,
+    "counter": 725.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0069",
+    "proposedOffer": 750.0,
+    "counter": 725.0,
+    "accepted": true,
+    "acceptedAmount": 700.0
+  },
+  {
+    "callRef": "C0273",
+    "proposedOffer": 1100.0,
+    "counter": 950.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0279",
+    "proposedOffer": 1425.0,
+    "counter": 1300.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0279",
+    "proposedOffer": 1375.0,
+    "counter": 1350.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0279",
+    "proposedOffer": 1350.0,
+    "counter": 1375.0,
+    "accepted": true,
+    "acceptedAmount": 1400.0
+  },
+  {
+    "callRef": "C0239",
+    "proposedOffer": 825.0,
+    "counter": 775.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0239",
+    "proposedOffer": 800.0,
+    "counter": 775.0,
+    "accepted": true,
+    "acceptedAmount": 825.0
+  },
+  {
+    "callRef": "C0206",
+    "proposedOffer": 1500.0,
+    "counter": 1350.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0206",
+    "proposedOffer": 1450.0,
+    "counter": 1375.0,
+    "accepted": true,
+    "acceptedAmount": 1425.0
+  },
+  {
+    "callRef": "C0194",
+    "proposedOffer": 900.0,
+    "counter": 750.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0194",
+    "proposedOffer": 875.0,
+    "counter": 775.0,
+    "accepted": true,
+    "acceptedAmount": 800.0
+  },
+  {
+    "callRef": "C0053",
+    "proposedOffer": 3275.0,
+    "counter": 2925.0,
+    "accepted": true,
+    "acceptedAmount": 3075.0
+  },
+  {
+    "callRef": "C0228",
+    "proposedOffer": 1125.0,
+    "counter": 925.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0228",
+    "proposedOffer": 1100.0,
+    "counter": 950.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0346",
+    "proposedOffer": 975.0,
+    "counter": 875.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0266",
+    "proposedOffer": 2675.0,
+    "counter": 2425.0,
+    "accepted": true,
+    "acceptedAmount": 2550.0
+  },
+  {
+    "callRef": "C0075",
+    "proposedOffer": 3225.0,
+    "counter": 2925.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0075",
+    "proposedOffer": 3200.0,
+    "counter": 3000.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0088",
+    "proposedOffer": 1325.0,
+    "counter": 1175.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0088",
+    "proposedOffer": 1275.0,
+    "counter": 1225.0,
+    "accepted": true,
+    "acceptedAmount": 1175.0
+  },
+  {
+    "callRef": "C0337",
+    "proposedOffer": 1225.0,
+    "counter": 1050.0,
+    "accepted": true,
+    "acceptedAmount": 1125.0
+  },
+  {
+    "callRef": "C0305",
+    "proposedOffer": 1000.0,
+    "counter": 875.0,
+    "accepted": true,
+    "acceptedAmount": 900.0
+  },
+  {
+    "callRef": "C0081",
+    "proposedOffer": 1075.0,
+    "counter": 950.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0081",
+    "proposedOffer": 1050.0,
+    "counter": 975.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0081",
+    "proposedOffer": 1000.0,
+    "counter": 1000.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0047",
+    "proposedOffer": 950.0,
+    "counter": 875.0,
+    "accepted": true,
+    "acceptedAmount": 900.0
+  },
+  {
+    "callRef": "C0193",
+    "proposedOffer": 1175.0,
+    "counter": 1050.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0193",
+    "proposedOffer": 1125.0,
+    "counter": 1050.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0193",
+    "proposedOffer": 1100.0,
+    "counter": 1075.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0067",
+    "proposedOffer": 1000.0,
+    "counter": 875.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0067",
+    "proposedOffer": 950.0,
+    "counter": 900.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0067",
+    "proposedOffer": 925.0,
+    "counter": 925.0,
+    "accepted": true,
+    "acceptedAmount": 900.0
+  },
+  {
+    "callRef": "C0297",
+    "proposedOffer": 750.0,
+    "counter": 700.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0297",
+    "proposedOffer": 750.0,
+    "counter": 725.0,
+    "accepted": true,
+    "acceptedAmount": 725.0
+  },
+  {
+    "callRef": "C0106",
+    "proposedOffer": 1425.0,
+    "counter": 1175.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0106",
+    "proposedOffer": 1375.0,
+    "counter": 1200.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0106",
+    "proposedOffer": 1350.0,
+    "counter": 1250.0,
+    "accepted": true,
+    "acceptedAmount": 1250.0
+  },
+  {
+    "callRef": "C0325",
+    "proposedOffer": 950.0,
+    "counter": 900.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0325",
+    "proposedOffer": 925.0,
+    "counter": 925.0,
+    "accepted": true,
+    "acceptedAmount": 950.0
+  },
+  {
+    "callRef": "C0071",
+    "proposedOffer": 2875.0,
+    "counter": 2425.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0071",
+    "proposedOffer": 2800.0,
+    "counter": 2475.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0030",
+    "proposedOffer": 1325.0,
+    "counter": 1200.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0030",
+    "proposedOffer": 1325.0,
+    "counter": 1250.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0336",
+    "proposedOffer": 1525.0,
+    "counter": 1325.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0313",
+    "proposedOffer": 775.0,
+    "counter": 700.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0313",
+    "proposedOffer": 750.0,
+    "counter": 725.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0286",
+    "proposedOffer": 775.0,
+    "counter": 700.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0102",
+    "proposedOffer": 1375.0,
+    "counter": 1175.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0102",
+    "proposedOffer": 1350.0,
+    "counter": 1200.0,
+    "accepted": true,
+    "acceptedAmount": 1250.0
+  },
+  {
+    "callRef": "C0270",
+    "proposedOffer": 1400.0,
+    "counter": 1275.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0089",
+    "proposedOffer": 975.0,
+    "counter": 875.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0089",
+    "proposedOffer": 950.0,
+    "counter": 900.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0089",
+    "proposedOffer": 925.0,
+    "counter": 925.0,
+    "accepted": true,
+    "acceptedAmount": 900.0
+  },
+  {
+    "callRef": "C0023",
+    "proposedOffer": 3325.0,
+    "counter": 2900.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0023",
+    "proposedOffer": 3250.0,
+    "counter": 2950.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0264",
+    "proposedOffer": 1075.0,
+    "counter": 900.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0264",
+    "proposedOffer": 1050.0,
+    "counter": 900.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0080",
+    "proposedOffer": 1475.0,
+    "counter": 1325.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0188",
+    "proposedOffer": 1200.0,
+    "counter": 1050.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0188",
+    "proposedOffer": 1175.0,
+    "counter": 1075.0,
+    "accepted": true,
+    "acceptedAmount": 1100.0
+  },
+  {
+    "callRef": "C0138",
+    "proposedOffer": 1450.0,
+    "counter": 1350.0,
+    "accepted": true,
+    "acceptedAmount": 1325.0
+  },
+  {
+    "callRef": "C0329",
+    "proposedOffer": 1600.0,
+    "counter": 1475.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0329",
+    "proposedOffer": 1525.0,
+    "counter": 1525.0,
+    "accepted": true,
+    "acceptedAmount": 1550.0
+  },
+  {
+    "callRef": "C0150",
+    "proposedOffer": 1100.0,
+    "counter": 950.0,
+    "accepted": true,
+    "acceptedAmount": 975.0
+  },
+  {
+    "callRef": "C0083",
+    "proposedOffer": 900.0,
+    "counter": 775.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0083",
+    "proposedOffer": 850.0,
+    "counter": 800.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0083",
+    "proposedOffer": 825.0,
+    "counter": 825.0,
+    "accepted": true,
+    "acceptedAmount": 800.0
+  },
+  {
+    "callRef": "C0085",
+    "proposedOffer": 775.0,
+    "counter": 700.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0085",
+    "proposedOffer": 750.0,
+    "counter": 725.0,
+    "accepted": true,
+    "acceptedAmount": 700.0
+  },
+  {
+    "callRef": "C0096",
+    "proposedOffer": 3500.0,
+    "counter": 2950.0,
+    "accepted": true,
+    "acceptedAmount": 3100.0
+  },
+  {
+    "callRef": "C0137",
+    "proposedOffer": 750.0,
+    "counter": 700.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0137",
+    "proposedOffer": 725.0,
+    "counter": 700.0,
+    "accepted": true,
+    "acceptedAmount": 700.0
+  },
+  {
+    "callRef": "C0221",
+    "proposedOffer": 1500.0,
+    "counter": 1225.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0221",
+    "proposedOffer": 1475.0,
+    "counter": 1250.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0221",
+    "proposedOffer": 1450.0,
+    "counter": 1250.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0301",
+    "proposedOffer": 2825.0,
+    "counter": 2475.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0301",
+    "proposedOffer": 2775.0,
+    "counter": 2525.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0301",
+    "proposedOffer": 2675.0,
+    "counter": 2600.0,
+    "accepted": true,
+    "acceptedAmount": 2500.0
+  },
+  {
+    "callRef": "C0163",
+    "proposedOffer": 1400.0,
+    "counter": 1175.0,
+    "accepted": true,
+    "acceptedAmount": 1250.0
+  },
+  {
+    "callRef": "C0108",
+    "proposedOffer": 2800.0,
+    "counter": 2450.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0108",
+    "proposedOffer": 2700.0,
+    "counter": 2500.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0108",
+    "proposedOffer": 2650.0,
+    "counter": 2550.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0036",
+    "proposedOffer": 1350.0,
+    "counter": 1200.0,
+    "accepted": true,
+    "acceptedAmount": 1225.0
+  },
+  {
+    "callRef": "C0351",
+    "proposedOffer": 1100.0,
+    "counter": 925.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0223",
+    "proposedOffer": 850.0,
+    "counter": 775.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0223",
+    "proposedOffer": 825.0,
+    "counter": 800.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0120",
+    "proposedOffer": 2800.0,
+    "counter": 2425.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0120",
+    "proposedOffer": 2725.0,
+    "counter": 2500.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0027",
+    "proposedOffer": 3475.0,
+    "counter": 2875.0,
+    "accepted": true,
+    "acceptedAmount": 2925.0
+  },
+  {
+    "callRef": "C0140",
+    "proposedOffer": 3225.0,
+    "counter": 2875.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0056",
+    "proposedOffer": 2675.0,
+    "counter": 2475.0,
+    "accepted": true,
+    "acceptedAmount": 2475.0
+  },
+  {
+    "callRef": "C0317",
+    "proposedOffer": 1400.0,
+    "counter": 1250.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0317",
+    "proposedOffer": 1350.0,
+    "counter": 1275.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0317",
+    "proposedOffer": 1325.0,
+    "counter": 1325.0,
+    "accepted": true,
+    "acceptedAmount": 1350.0
+  },
+  {
+    "callRef": "C0222",
+    "proposedOffer": 975.0,
+    "counter": 900.0,
+    "accepted": true,
+    "acceptedAmount": 925.0
+  },
+  {
+    "callRef": "C0059",
+    "proposedOffer": 1350.0,
+    "counter": 1250.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0059",
+    "proposedOffer": 1300.0,
+    "counter": 1250.0,
+    "accepted": true,
+    "acceptedAmount": 1275.0
+  },
+  {
+    "callRef": "C0208",
+    "proposedOffer": 775.0,
+    "counter": 700.0,
+    "accepted": true,
+    "acceptedAmount": 725.0
+  },
+  {
+    "callRef": "C0079",
+    "proposedOffer": 1550.0,
+    "counter": 1325.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0079",
+    "proposedOffer": 1500.0,
+    "counter": 1375.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0227",
+    "proposedOffer": 1100.0,
+    "counter": 925.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0227",
+    "proposedOffer": 1100.0,
+    "counter": 950.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0227",
+    "proposedOffer": 1050.0,
+    "counter": 975.0,
+    "accepted": true,
+    "acceptedAmount": 1025.0
+  },
+  {
+    "callRef": "C0174",
+    "proposedOffer": 1000.0,
+    "counter": 875.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0174",
+    "proposedOffer": 1000.0,
+    "counter": 900.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0174",
+    "proposedOffer": 975.0,
+    "counter": 925.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0091",
+    "proposedOffer": 1475.0,
+    "counter": 1350.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0091",
+    "proposedOffer": 1450.0,
+    "counter": 1400.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0213",
+    "proposedOffer": 1075.0,
+    "counter": 950.0,
+    "accepted": true,
+    "acceptedAmount": 925.0
+  },
+  {
+    "callRef": "C0004",
+    "proposedOffer": 1325.0,
+    "counter": 1200.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0004",
+    "proposedOffer": 1275.0,
+    "counter": 1225.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0272",
+    "proposedOffer": 1750.0,
+    "counter": 1450.0,
+    "accepted": true,
+    "acceptedAmount": 1600.0
+  },
+  {
+    "callRef": "C0130",
+    "proposedOffer": 1475.0,
+    "counter": 1350.0,
+    "accepted": true,
+    "acceptedAmount": 1425.0
+  },
+  {
+    "callRef": "C0097",
+    "proposedOffer": 1175.0,
+    "counter": 1050.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0097",
+    "proposedOffer": 1150.0,
+    "counter": 1075.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0097",
+    "proposedOffer": 1150.0,
+    "counter": 1100.0,
+    "accepted": true,
+    "acceptedAmount": 1125.0
+  },
+  {
+    "callRef": "C0143",
+    "proposedOffer": 3475.0,
+    "counter": 2850.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0347",
+    "proposedOffer": 1475.0,
+    "counter": 1375.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0347",
+    "proposedOffer": 1425.0,
+    "counter": 1425.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0212",
+    "proposedOffer": 1375.0,
+    "counter": 1175.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0212",
+    "proposedOffer": 1325.0,
+    "counter": 1200.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0212",
+    "proposedOffer": 1275.0,
+    "counter": 1250.0,
+    "accepted": true,
+    "acceptedAmount": 1250.0
+  },
+  {
+    "callRef": "C0204",
+    "proposedOffer": 1075.0,
+    "counter": 975.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0204",
+    "proposedOffer": 1050.0,
+    "counter": 975.0,
+    "accepted": true,
+    "acceptedAmount": 975.0
+  },
+  {
+    "callRef": "C0035",
+    "proposedOffer": 1150.0,
+    "counter": 1075.0,
+    "accepted": true,
+    "acceptedAmount": 1075.0
+  },
+  {
+    "callRef": "C0110",
+    "proposedOffer": 825.0,
+    "counter": 775.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0110",
+    "proposedOffer": 825.0,
+    "counter": 800.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0110",
+    "proposedOffer": 775.0,
+    "counter": 825.0,
+    "accepted": true,
+    "acceptedAmount": 775.0
+  },
+  {
+    "callRef": "C0175",
+    "proposedOffer": 1025.0,
+    "counter": 950.0,
+    "accepted": true,
+    "acceptedAmount": 975.0
+  },
+  {
+    "callRef": "C0082",
+    "proposedOffer": 1300.0,
+    "counter": 1175.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0082",
+    "proposedOffer": 1250.0,
+    "counter": 1200.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0082",
+    "proposedOffer": 1225.0,
+    "counter": 1225.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0255",
+    "proposedOffer": 1525.0,
+    "counter": 1325.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0255",
+    "proposedOffer": 1475.0,
+    "counter": 1400.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0349",
+    "proposedOffer": 2775.0,
+    "counter": 2500.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0349",
+    "proposedOffer": 2700.0,
+    "counter": 2575.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0349",
+    "proposedOffer": 2600.0,
+    "counter": 2625.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0034",
+    "proposedOffer": 1050.0,
+    "counter": 950.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0034",
+    "proposedOffer": 1025.0,
+    "counter": 975.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0020",
+    "proposedOffer": 1750.0,
+    "counter": 1500.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0020",
+    "proposedOffer": 1700.0,
+    "counter": 1550.0,
+    "accepted": true,
+    "acceptedAmount": 1600.0
+  },
+  {
+    "callRef": "C0217",
+    "proposedOffer": 1100.0,
+    "counter": 925.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0217",
+    "proposedOffer": 1050.0,
+    "counter": 950.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0217",
+    "proposedOffer": 1025.0,
+    "counter": 1000.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0038",
+    "proposedOffer": 1050.0,
+    "counter": 925.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0038",
+    "proposedOffer": 1025.0,
+    "counter": 950.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0038",
+    "proposedOffer": 1025.0,
+    "counter": 950.0,
+    "accepted": true,
+    "acceptedAmount": 925.0
+  },
+  {
+    "callRef": "C0177",
+    "proposedOffer": 1725.0,
+    "counter": 1525.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0177",
+    "proposedOffer": 1650.0,
+    "counter": 1575.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0291",
+    "proposedOffer": 1250.0,
+    "counter": 1075.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0291",
+    "proposedOffer": 1200.0,
+    "counter": 1100.0,
+    "accepted": true,
+    "acceptedAmount": 1150.0
+  },
+  {
+    "callRef": "C0151",
+    "proposedOffer": 1050.0,
+    "counter": 925.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0151",
+    "proposedOffer": 1025.0,
+    "counter": 975.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0151",
+    "proposedOffer": 1000.0,
+    "counter": 1000.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0057",
+    "proposedOffer": 1475.0,
+    "counter": 1300.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0057",
+    "proposedOffer": 1425.0,
+    "counter": 1350.0,
+    "accepted": true,
+    "acceptedAmount": 1350.0
+  },
+  {
+    "callRef": "C0095",
+    "proposedOffer": 1400.0,
+    "counter": 1225.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0095",
+    "proposedOffer": 1350.0,
+    "counter": 1275.0,
+    "accepted": true,
+    "acceptedAmount": 1350.0
+  },
+  {
+    "callRef": "C0086",
+    "proposedOffer": 3225.0,
+    "counter": 2900.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0086",
+    "proposedOffer": 3150.0,
+    "counter": 2925.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0086",
+    "proposedOffer": 3125.0,
+    "counter": 3050.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0263",
+    "proposedOffer": 1200.0,
+    "counter": 1050.0,
+    "accepted": true,
+    "acceptedAmount": 1050.0
+  },
+  {
+    "callRef": "C0229",
+    "proposedOffer": 1400.0,
+    "counter": 1250.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0229",
+    "proposedOffer": 1325.0,
+    "counter": 1300.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0229",
+    "proposedOffer": 1275.0,
+    "counter": 1325.0,
+    "accepted": true,
+    "acceptedAmount": 1300.0
+  },
+  {
+    "callRef": "C0122",
+    "proposedOffer": 2775.0,
+    "counter": 2475.0,
+    "accepted": true,
+    "acceptedAmount": 2625.0
+  },
+  {
+    "callRef": "C0157",
+    "proposedOffer": 1700.0,
+    "counter": 1475.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0157",
+    "proposedOffer": 1675.0,
+    "counter": 1500.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0298",
+    "proposedOffer": 1325.0,
+    "counter": 1200.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0298",
+    "proposedOffer": 1275.0,
+    "counter": 1225.0,
+    "accepted": true,
+    "acceptedAmount": 1250.0
+  },
+  {
+    "callRef": "C0258",
+    "proposedOffer": 1075.0,
+    "counter": 925.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0258",
+    "proposedOffer": 1075.0,
+    "counter": 950.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0343",
+    "proposedOffer": 1000.0,
+    "counter": 925.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0147",
+    "proposedOffer": 1475.0,
+    "counter": 1250.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0147",
+    "proposedOffer": 1450.0,
+    "counter": 1275.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0147",
+    "proposedOffer": 1425.0,
+    "counter": 1300.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0225",
+    "proposedOffer": 1300.0,
+    "counter": 1200.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0225",
+    "proposedOffer": 1250.0,
+    "counter": 1225.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0225",
+    "proposedOffer": 1200.0,
+    "counter": 1250.0,
+    "accepted": true,
+    "acceptedAmount": 1225.0
+  },
+  {
+    "callRef": "C0202",
+    "proposedOffer": 3175.0,
+    "counter": 2950.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0202",
+    "proposedOffer": 3150.0,
+    "counter": 3075.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0141",
+    "proposedOffer": 925.0,
+    "counter": 750.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0141",
+    "proposedOffer": 875.0,
+    "counter": 775.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0141",
+    "proposedOffer": 850.0,
+    "counter": 800.0,
+    "accepted": true,
+    "acceptedAmount": 800.0
+  },
+  {
+    "callRef": "C0328",
+    "proposedOffer": 850.0,
+    "counter": 775.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0328",
+    "proposedOffer": 825.0,
+    "counter": 775.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0328",
+    "proposedOffer": 800.0,
+    "counter": 800.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0073",
+    "proposedOffer": 1250.0,
+    "counter": 1050.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0073",
+    "proposedOffer": 1200.0,
+    "counter": 1100.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0073",
+    "proposedOffer": 1175.0,
+    "counter": 1125.0,
+    "accepted": true,
+    "acceptedAmount": 1100.0
+  },
+  {
+    "callRef": "C0247",
+    "proposedOffer": 1400.0,
+    "counter": 1250.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0247",
+    "proposedOffer": 1350.0,
+    "counter": 1300.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0247",
+    "proposedOffer": 1350.0,
+    "counter": 1325.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0164",
+    "proposedOffer": 1100.0,
+    "counter": 950.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0164",
+    "proposedOffer": 1075.0,
+    "counter": 950.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0123",
+    "proposedOffer": 1325.0,
+    "counter": 1200.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0123",
+    "proposedOffer": 1250.0,
+    "counter": 1225.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0123",
+    "proposedOffer": 1225.0,
+    "counter": 1275.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0024",
+    "proposedOffer": 2900.0,
+    "counter": 2550.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0024",
+    "proposedOffer": 2825.0,
+    "counter": 2575.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0024",
+    "proposedOffer": 2700.0,
+    "counter": 2700.0,
+    "accepted": true,
+    "acceptedAmount": 2525.0
+  },
+  {
+    "callRef": "C0236",
+    "proposedOffer": 1200.0,
+    "counter": 1050.0,
+    "accepted": true,
+    "acceptedAmount": 1125.0
+  },
+  {
+    "callRef": "C0256",
+    "proposedOffer": 900.0,
+    "counter": 775.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0256",
+    "proposedOffer": 875.0,
+    "counter": 800.0,
+    "accepted": true,
+    "acceptedAmount": 800.0
+  },
+  {
+    "callRef": "C0006",
+    "proposedOffer": 1350.0,
+    "counter": 1175.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0072",
+    "proposedOffer": 1300.0,
+    "counter": 1200.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0072",
+    "proposedOffer": 1275.0,
+    "counter": 1225.0,
+    "accepted": true,
+    "acceptedAmount": 1250.0
+  },
+  {
+    "callRef": "C0077",
+    "proposedOffer": 1100.0,
+    "counter": 950.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0077",
+    "proposedOffer": 1050.0,
+    "counter": 1000.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0077",
+    "proposedOffer": 1050.0,
+    "counter": 1025.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0094",
+    "proposedOffer": 3375.0,
+    "counter": 2950.0,
+    "accepted": true,
+    "acceptedAmount": 2900.0
+  },
+  {
+    "callRef": "C0125",
+    "proposedOffer": 850.0,
+    "counter": 775.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0125",
+    "proposedOffer": 825.0,
+    "counter": 800.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0125",
+    "proposedOffer": 825.0,
+    "counter": 825.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0041",
+    "proposedOffer": 1225.0,
+    "counter": 1075.0,
+    "accepted": true,
+    "acceptedAmount": 1150.0
+  },
+  {
+    "callRef": "C0121",
+    "proposedOffer": 850.0,
+    "counter": 775.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0121",
+    "proposedOffer": 850.0,
+    "counter": 775.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0121",
+    "proposedOffer": 825.0,
+    "counter": 800.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0046",
+    "proposedOffer": 1025.0,
+    "counter": 925.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0046",
+    "proposedOffer": 1025.0,
+    "counter": 950.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0014",
+    "proposedOffer": 775.0,
+    "counter": 675.0,
+    "accepted": true,
+    "acceptedAmount": 700.0
+  },
+  {
+    "callRef": "C0168",
+    "proposedOffer": 1300.0,
+    "counter": 1200.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0168",
+    "proposedOffer": 1275.0,
+    "counter": 1225.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0168",
+    "proposedOffer": 1250.0,
+    "counter": 1275.0,
+    "accepted": true,
+    "acceptedAmount": 1250.0
+  },
+  {
+    "callRef": "C0318",
+    "proposedOffer": 750.0,
+    "counter": 675.0,
+    "accepted": true,
+    "acceptedAmount": 700.0
+  },
+  {
+    "callRef": "C0162",
+    "proposedOffer": 1400.0,
+    "counter": 1175.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0162",
+    "proposedOffer": 1375.0,
+    "counter": 1200.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0162",
+    "proposedOffer": 1300.0,
+    "counter": 1250.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0289",
+    "proposedOffer": 1050.0,
+    "counter": 875.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0289",
+    "proposedOffer": 1025.0,
+    "counter": 900.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0289",
+    "proposedOffer": 975.0,
+    "counter": 925.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0128",
+    "proposedOffer": 1000.0,
+    "counter": 925.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0128",
+    "proposedOffer": 1000.0,
+    "counter": 975.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0128",
+    "proposedOffer": 950.0,
+    "counter": 1000.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0310",
+    "proposedOffer": 725.0,
+    "counter": 700.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0310",
+    "proposedOffer": 725.0,
+    "counter": 725.0,
+    "accepted": true,
+    "acceptedAmount": 700.0
+  },
+  {
+    "callRef": "C0003",
+    "proposedOffer": 1450.0,
+    "counter": 1250.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0003",
+    "proposedOffer": 1375.0,
+    "counter": 1300.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0285",
+    "proposedOffer": 2800.0,
+    "counter": 2450.0,
+    "accepted": true,
+    "acceptedAmount": 2625.0
+  },
+  {
+    "callRef": "C0044",
+    "proposedOffer": 1425.0,
+    "counter": 1250.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0044",
+    "proposedOffer": 1375.0,
+    "counter": 1300.0,
+    "accepted": true,
+    "acceptedAmount": 1325.0
+  },
+  {
+    "callRef": "C0026",
+    "proposedOffer": 3375.0,
+    "counter": 2825.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0026",
+    "proposedOffer": 3225.0,
+    "counter": 2925.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0245",
+    "proposedOffer": 2875.0,
+    "counter": 2500.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0245",
+    "proposedOffer": 2850.0,
+    "counter": 2575.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0144",
+    "proposedOffer": 1000.0,
+    "counter": 950.0,
+    "accepted": true,
+    "acceptedAmount": 1000.0
+  },
+  {
+    "callRef": "C0064",
+    "proposedOffer": 3400.0,
+    "counter": 2875.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0064",
+    "proposedOffer": 3250.0,
+    "counter": 2975.0,
+    "accepted": true,
+    "acceptedAmount": 3100.0
+  },
+  {
+    "callRef": "C0237",
+    "proposedOffer": 825.0,
+    "counter": 700.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0237",
+    "proposedOffer": 800.0,
+    "counter": 700.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0237",
+    "proposedOffer": 750.0,
+    "counter": 725.0,
+    "accepted": true,
+    "acceptedAmount": 725.0
+  },
+  {
+    "callRef": "C0076",
+    "proposedOffer": 1475.0,
+    "counter": 1350.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0076",
+    "proposedOffer": 1425.0,
+    "counter": 1400.0,
+    "accepted": true,
+    "acceptedAmount": 1350.0
+  },
+  {
+    "callRef": "C0231",
+    "proposedOffer": 1225.0,
+    "counter": 1050.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0231",
+    "proposedOffer": 1200.0,
+    "counter": 1075.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0231",
+    "proposedOffer": 1175.0,
+    "counter": 1100.0,
+    "accepted": true,
+    "acceptedAmount": 1075.0
+  },
+  {
+    "callRef": "C0269",
+    "proposedOffer": 2825.0,
+    "counter": 2525.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0269",
+    "proposedOffer": 2700.0,
+    "counter": 2575.0,
+    "accepted": true,
+    "acceptedAmount": 2625.0
+  },
+  {
+    "callRef": "C0338",
+    "proposedOffer": 775.0,
+    "counter": 700.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0338",
+    "proposedOffer": 750.0,
+    "counter": 725.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0338",
+    "proposedOffer": 750.0,
+    "counter": 725.0,
+    "accepted": true,
+    "acceptedAmount": 750.0
+  },
+  {
+    "callRef": "C0148",
+    "proposedOffer": 2700.0,
+    "counter": 2500.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0148",
+    "proposedOffer": 2650.0,
+    "counter": 2525.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0148",
+    "proposedOffer": 2575.0,
+    "counter": 2575.0,
+    "accepted": true,
+    "acceptedAmount": 2475.0
+  },
+  {
+    "callRef": "C0052",
+    "proposedOffer": 1525.0,
+    "counter": 1350.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0052",
+    "proposedOffer": 1475.0,
+    "counter": 1375.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0058",
+    "proposedOffer": 1050.0,
+    "counter": 875.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0058",
+    "proposedOffer": 1000.0,
+    "counter": 900.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0200",
+    "proposedOffer": 2800.0,
+    "counter": 2475.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0200",
+    "proposedOffer": 2700.0,
+    "counter": 2525.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0233",
+    "proposedOffer": 2850.0,
+    "counter": 2525.0,
+    "accepted": true,
+    "acceptedAmount": 2550.0
+  },
+  {
+    "callRef": "C0254",
+    "proposedOffer": 1525.0,
+    "counter": 1350.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0254",
+    "proposedOffer": 1500.0,
+    "counter": 1400.0,
+    "accepted": true,
+    "acceptedAmount": 1425.0
+  },
+  {
+    "callRef": "C0198",
+    "proposedOffer": 3475.0,
+    "counter": 2950.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0277",
+    "proposedOffer": 1100.0,
+    "counter": 925.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0277",
+    "proposedOffer": 1075.0,
+    "counter": 925.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0260",
+    "proposedOffer": 875.0,
+    "counter": 775.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0260",
+    "proposedOffer": 850.0,
+    "counter": 800.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0260",
+    "proposedOffer": 850.0,
+    "counter": 800.0,
+    "accepted": true,
+    "acceptedAmount": 775.0
+  },
+  {
+    "callRef": "C0261",
+    "proposedOffer": 1025.0,
+    "counter": 950.0,
+    "accepted": true,
+    "acceptedAmount": 975.0
+  },
+  {
+    "callRef": "C0169",
+    "proposedOffer": 3350.0,
+    "counter": 2875.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0055",
+    "proposedOffer": 3200.0,
+    "counter": 2950.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0025",
+    "proposedOffer": 800.0,
+    "counter": 675.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0025",
+    "proposedOffer": 775.0,
+    "counter": 700.0,
+    "accepted": true,
+    "acceptedAmount": 725.0
+  },
+  {
+    "callRef": "C0312",
+    "proposedOffer": 1125.0,
+    "counter": 950.0,
+    "accepted": true,
+    "acceptedAmount": 975.0
+  },
+  {
+    "callRef": "C0344",
+    "proposedOffer": 1175.0,
+    "counter": 1050.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0344",
+    "proposedOffer": 1150.0,
+    "counter": 1075.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0344",
+    "proposedOffer": 1125.0,
+    "counter": 1100.0,
+    "accepted": true,
+    "acceptedAmount": 1100.0
+  },
+  {
+    "callRef": "C0022",
+    "proposedOffer": 1275.0,
+    "counter": 1075.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0283",
+    "proposedOffer": 775.0,
+    "counter": 700.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0214",
+    "proposedOffer": 1425.0,
+    "counter": 1175.0,
+    "accepted": true,
+    "acceptedAmount": 1250.0
+  },
+  {
+    "callRef": "C0099",
+    "proposedOffer": 1325.0,
+    "counter": 1250.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0282",
+    "proposedOffer": 900.0,
+    "counter": 750.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0282",
+    "proposedOffer": 850.0,
+    "counter": 775.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0282",
+    "proposedOffer": 825.0,
+    "counter": 800.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0065",
+    "proposedOffer": 900.0,
+    "counter": 775.0,
+    "accepted": true,
+    "acceptedAmount": 800.0
+  },
+  {
+    "callRef": "C0087",
+    "proposedOffer": 1625.0,
+    "counter": 1500.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0087",
+    "proposedOffer": 1575.0,
+    "counter": 1525.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0087",
+    "proposedOffer": 1525.0,
+    "counter": 1550.0,
+    "accepted": true,
+    "acceptedAmount": 1475.0
+  },
+  {
+    "callRef": "C0031",
+    "proposedOffer": 1075.0,
+    "counter": 950.0,
+    "accepted": true,
+    "acceptedAmount": 950.0
+  },
+  {
+    "callRef": "C0315",
+    "proposedOffer": 1575.0,
+    "counter": 1475.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0315",
+    "proposedOffer": 1525.0,
+    "counter": 1500.0,
+    "accepted": true,
+    "acceptedAmount": 1500.0
+  },
+  {
+    "callRef": "C0251",
+    "proposedOffer": 3175.0,
+    "counter": 2900.0,
+    "accepted": true,
+    "acceptedAmount": 2925.0
+  },
+  {
+    "callRef": "C0117",
+    "proposedOffer": 1025.0,
+    "counter": 925.0,
+    "accepted": true,
+    "acceptedAmount": 975.0
+  },
+  {
+    "callRef": "C0295",
+    "proposedOffer": 2750.0,
+    "counter": 2400.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0295",
+    "proposedOffer": 2700.0,
+    "counter": 2475.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0028",
+    "proposedOffer": 1250.0,
+    "counter": 1100.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0028",
+    "proposedOffer": 1225.0,
+    "counter": 1125.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0028",
+    "proposedOffer": 1200.0,
+    "counter": 1150.0,
+    "accepted": true,
+    "acceptedAmount": 1100.0
+  },
+  {
+    "callRef": "C0333",
+    "proposedOffer": 1050.0,
+    "counter": 950.0,
+    "accepted": false,
+    "acceptedAmount": null
+  },
+  {
+    "callRef": "C0333",
+    "proposedOffer": 1025.0,
+    "counter": 950.0,
+    "accepted": true,
+    "acceptedAmount": 1000.0
+  }
+]
