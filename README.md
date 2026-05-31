@@ -15,8 +15,6 @@ The repository also bundles a React frontend (`frontend/`) that is compiled and 
 - [Platform libraries (Passport & Commons)](#platform-libraries-passport--commons)
   - [Passport — authentication & authorization](#passport--authentication--authorization)
   - [Local mode (how this app authenticates)](#local-mode-how-this-app-authenticates)
-  - [Logging — audit, request & service logs](#logging--audit-request--service-logs)
-  - [Safe vs unsafe log parameters](#safe-vs-unsafe-log-parameters)
 - [Data model](#data-model)
 - [Seed / demo data](#seed--demo-data)
 - [Load search (Apache Lucene)](#load-search-apache-lucene)
@@ -137,44 +135,6 @@ Authorization: Bearer 9ccd158d-9f50-4ea7-8ede-95ffe1746833
 Groups referenced by a user but not declared are auto-created; `password` is only needed if you call `login()`. Two helpers on `PassportUtility` are **legal only in local mode** (they throw `LocalModeOnlyException` under `prod`/`mock`): `login(UserLoginRequest)` for username/password auth against the in-memory store, and `createBearerToken(...)` to mint a fresh in-memory token for a local user.
 
 All controllers also carry `@CrossOrigin` so the browser frontend can call them.
-
-### Logging — audit, request & service logs
-
-The `commons` library replaces ad-hoc `slf4j` calls with `OrangeLogger` and ships **three independent, structured-JSON log streams**, each with its own logback appender, rolling daily and gzip-compressed, size- and history-bounded. All three render through a custom Logstash encoder (`SimpleJsonLoggingEventCompositeEncoder`) and stamp every record with an ISO timestamp (`yyyy-MM-dd'T'HH:mm:ss.SSSSSSXXX`):
-
-| Stream | Logger name | File | Written by | Carries |
-|---|---|---|---|---|
-| **Service log** | `ROOT` (+ console) | `service.log` → `service.%d{yyyy-MM-dd}.%i.log.gz` | `OrangeLogger` | The application's own trace/debug/info/warn/error lines |
-| **Request log** | `requests` | `requests.log` → `requests.%d{…}.log.gz` | `RequestLoggingFilter` + `LoggingInterceptor` | One record per HTTP request: `timestamp, userId, traceId, endpoint, method, statusCode, headers, payload, duration` (ms) |
-| **Audit log** | `audit` | `audit.log` → `audit.%d{…}.log.gz` | `AuditLogger` | Business-event records: `timestamp, userId, type, data` |
-
-- **Service log** is what the application code writes. Every class in this codebase declares `private static final OrangeLogger logger = new OrangeLogger(MyClass.class)` and logs through it (`logger.info(...)`, `logger.error(throwable, ...)`, etc.). `OrangeLogger` supports the five levels, each with an optional leading `Throwable`, and uses `{}` placeholders filled by `LogParameter` varargs (see below). It also goes to the console appender for local dev.
-- **Request log** is populated automatically — a servlet `Filter` (`RequestLoggingFilter`) wraps each request/response and a `HandlerInterceptor` (`LoggingInterceptor`) times it, then `RequestLogger` emits a single JSON line under the `requests` logger. Nothing in the application code has to call it.
-- **Audit log** records security/business-significant mutations via `AuditLogger.log(userId, AuditLogType, data)`. `AuditLogType` enumerates the audited actions:
-
-  ```
-  OBJECT_LOAD, OBJECT_EDIT, OBJECT_DELETE, OBJECT_CREATE, OBJECT_PERMISSION_CHANGE,
-  USER_CREATE, USER_MODIFIED, USER_DELETE
-  ```
-
-### Safe vs unsafe log parameters
-
-`OrangeLogger` never takes bare values — every interpolated argument is wrapped as a `LogParameter`, of which there are two kinds (both expose `getValue()` and `isSafe()`):
-
-| Wrapper | `isSafe()` | Intended for |
-|---|---|---|
-| `SafeLogParam.of(x)` | `true` | Non-sensitive values fine to appear verbatim in logs — ids, counts, durations, locations |
-| `UnSafeLogParam.of(x)` | `false` | Sensitive values that must not leak into the readable message — PII, secrets, raw payloads |
-
-For each log call `OrangeLogger` produces **three views of the same line**, so a downstream pipeline can decide how much to expose:
-
-1. **The formatted message** (what `slf4j` logs): `{}` placeholders filled with the real serialized value of *every* parameter.
-2. **`safeMessage`** (put on the SLF4J **MDC**): the same message, but every `UnSafeLogParam` is masked as `{}` — `SafeLogParam` values are still shown in place.
-3. **`unsafeParams`** (also on the MDC): a serialized JSON array of just the unsafe values, isolated as a separate field.
-
-This separation lets a log aggregator forward the sanitized `safeMessage` and treat the `unsafeParams` field as separately governed (redact it, encrypt it, restrict access, or route it to a secure sink) without losing the readable structure of the line. Throughout this codebase **every** parameter is wrapped with `SafeLogParam.of(...)` — load ids, document counts, search durations, carrier MC numbers, etc. — because none of the logged values are sensitive; `UnSafeLogParam` is available for when they would be.
-
----
 
 ## Data model
 
