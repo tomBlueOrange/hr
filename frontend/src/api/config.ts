@@ -5,10 +5,8 @@
 // call it directly — no dev proxy needed. Run the dashboard with `npm start`
 // (default port 3000).
 //
-// The auth token can be overridden at build time via REACT_APP_HR_TOKEN
-// (e.g. in a .env.local file); it falls back to the known local dev token.
+// The auth token is no longer hard-coded: the user supplies it via the login
+// screen and it is read at request time from the cookie store (see
+// src/auth/token.ts), so it is not defined here.
 
 export const API_BASE = process.env.REACT_APP_HR_API_BASE ?? "http://localhost:9876/api/v1";
-
-export const TOKEN =
-    process.env.REACT_APP_HR_TOKEN ?? "9ccd158d-9f50-4ea7-8ede-95ffe1746833";

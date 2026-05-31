@@ -68,6 +68,26 @@
     font-weight: 600;
 }
 
+/* ---- Logout ------------------------------------------------------------- */
+.hr-logout-btn {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: transparent;
+    color: #cbd3da;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.hr-logout-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
 /* ---- Range selector ----------------------------------------------------- */
 .hr-range-selector {
     display: flex;

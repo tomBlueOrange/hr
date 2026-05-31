@@ -1,13 +1,20 @@
 // Thin fetch wrapper: attaches the bearer token + JSON headers, throws a
 // descriptive error on non-2xx responses, and returns parsed JSON.
 
-import {API_BASE, TOKEN} from "./config";
+import {API_BASE} from "./config";
+import {getToken} from "../auth/token";
 
 function authHeaders(): Record<string, string> {
-    return {
-        "Authorization": `Bearer ${TOKEN}`,
+    const headers: Record<string, string> = {
         "Content-Type": "application/json",
     };
+    // Read the user-supplied token from the cookie at request time so it always
+    // reflects the current login/logout state.
+    const token = getToken();
+    if (token) {
+        headers["Authorization"] = `Bearer ${token}`;
+    }
+    return headers;
 }
 
 async function handle<T>(res: Response): Promise<T> {

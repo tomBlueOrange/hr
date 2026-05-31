@@ -10,11 +10,13 @@ import "../components/search/search-theme.css";
 import {OverviewView} from "./OverviewView";
 import {InsightsView} from "./InsightsView";
 import {LoadSearchView} from "./LoadSearchView";
+import {useAuth} from "../auth/AuthContext";
 
 type View = "overview" | "insights" | "search";
 
 export const DashboardApp: React.FC = () => {
     const [view, setView] = useState<View>("overview");
+    const {logout} = useAuth();
 
     return (
         <div className="hr-app">
@@ -43,6 +45,10 @@ export const DashboardApp: React.FC = () => {
                         Load Search
                     </button>
                 </nav>
+                <button className="hr-logout-btn" onClick={logout}>
+                    <i className="ri-logout-circle-line" />
+                    Logout
+                </button>
             </header>
 
             <main className="hr-main">
