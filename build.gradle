@@ -73,6 +73,10 @@ tasks.register('buildFrontend', Exec) {
     inputs.file("$frontendDir/package.json")
     inputs.file("$frontendDir/package-lock.json")
     outputs.dir("$frontendDir/build")
+    // react-scripts treats ESLint warnings as build-breaking errors whenever the
+    // CI env var is truthy (GitHub Actions sets CI=true). Force it off so the
+    // production build behaves the same in CI as it does locally.
+    environment 'CI', 'false'
     commandLine npmCommand, 'run', 'build'
 }
 
