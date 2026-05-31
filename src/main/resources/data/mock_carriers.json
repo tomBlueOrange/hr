@@ -1,0 +1,82 @@
+[
+  {
+    "docketNumbers": ["44110"],
+    "carrier": {
+      "dotNumber": 2071774,
+      "legalName": "BOC'S GREYHOUNDS INC",
+      "dbaName": "BGR",
+      "allowedToOperate": "Y",
+      "statusCode": "A",
+      "carrierOperation": { "carrierOperationCode": "A", "carrierOperationDesc": "Interstate" },
+      "phyStreet": "31400 BELLEVUE DR",
+      "phyCity": "BELLEVUE",
+      "phyState": "IA",
+      "phyZipcode": "52031",
+      "phyCountry": "US",
+      "totalDrivers": 3,
+      "totalPowerUnits": 2,
+      "safetyRating": null,
+      "crashTotal": 0
+    }
+  },
+  {
+    "docketNumbers": ["987654"],
+    "carrier": {
+      "dotNumber": 3537472,
+      "legalName": "ACME TRUCKING LLC",
+      "dbaName": "ACME EXPRESS",
+      "allowedToOperate": "Y",
+      "statusCode": "A",
+      "carrierOperation": { "carrierOperationCode": "A", "carrierOperationDesc": "Interstate" },
+      "phyStreet": "100 LOGISTICS WAY",
+      "phyCity": "DALLAS",
+      "phyState": "TX",
+      "phyZipcode": "75201",
+      "phyCountry": "US",
+      "totalDrivers": 50,
+      "totalPowerUnits": 42,
+      "safetyRating": "Satisfactory",
+      "crashTotal": 1
+    }
+  },
+  {
+    "docketNumbers": ["111111", "111112"],
+    "carrier": {
+      "dotNumber": 1000001,
+      "legalName": "RELIABLE FREIGHT CARRIERS INC",
+      "dbaName": "RELIABLE FREIGHT",
+      "allowedToOperate": "Y",
+      "statusCode": "A",
+      "carrierOperation": { "carrierOperationCode": "A", "carrierOperationDesc": "Interstate" },
+      "phyStreet": "9 HARBOR BLVD",
+      "phyCity": "LOS ANGELES",
+      "phyState": "CA",
+      "phyZipcode": "90001",
+      "phyCountry": "US",
+      "totalDrivers": 120,
+      "totalPowerUnits": 95,
+      "safetyRating": "Satisfactory",
+      "crashTotal": 2
+    }
+  },
+  {
+    "docketNumbers": ["222222"],
+    "carrier": {
+      "dotNumber": 2000002,
+      "legalName": "OUT OF SERVICE HAULERS LLC",
+      "dbaName": null,
+      "allowedToOperate": "N",
+      "statusCode": "I",
+      "carrierOperation": { "carrierOperationCode": "A", "carrierOperationDesc": "Interstate" },
+      "phyStreet": "500 SHUTDOWN RD",
+      "phyCity": "NEWARK",
+      "phyState": "NJ",
+      "phyZipcode": "07101",
+      "phyCountry": "US",
+      "totalDrivers": 0,
+      "totalPowerUnits": 0,
+      "safetyRating": "Unsatisfactory",
+      "crashTotal": 7
+    }
+  }
+]

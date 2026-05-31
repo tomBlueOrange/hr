@@ -5,6 +5,7 @@ import com.blueorange.commons.config.SafeLogParam;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.blueorange.happyrobot.entities.fmcsa.Carrier;
 import org.blueorange.happyrobot.entities.fmcsa.CarrierResult;
+import org.blueorange.happyrobot.entities.fmcsa.CarrierValidationResponse;
 import org.blueorange.happyrobot.entities.fmcsa.FmcsaCarrierListResponse;
 import org.blueorange.happyrobot.entities.fmcsa.FmcsaCarrierResponse;
 import org.blueorange.happyrobot.entities.fmcsa.MockCarrier;
@@ -144,9 +145,52 @@ public class FmcsaService {
                 FmcsaCarrierListResponse.class));
     }
 
+    /**
+     * Validates a carrier for the inbound carrier-sales flow: given the MC/docket number a carrier
+     * rep quotes, this resolves the carrier with FMCSA and decides whether they are eligible to be
+     * worked with. A carrier is eligible only if it is found and {@code allowedToOperate == "Y"}.
+     *
+     * <p>The input is normalised to digits, so {@code "MC-44110"}, {@code "MC 44110"} and
+     * {@code "44110"} all resolve to docket {@code 44110}.
+     *
+     * @param mcNumber the carrier's motor-carrier (MC/MX/FF) docket number, in any common format
+     * @return the eligibility decision, including the matched carrier when one is found
+     */
+    public CarrierValidationResponse validateCarrier(String mcNumber) {
+        String docket = normaliseDocket(mcNumber);
+        if (docket.isEmpty()) {
+            return CarrierValidationResponse.ineligible(mcNumber, null, "No MC number was provided");
+        }
+
+        List<Carrier> carriers = getCarriersByDocketNumber(docket);
+        if (carriers.isEmpty()) {
+            return CarrierValidationResponse.ineligible(mcNumber, null,
+                    "No carrier was found for MC number " + mcNumber);
+        }
+
+        Carrier carrier = carriers.get(0);
+        String label = describe(carrier);
+        if (!"Y".equalsIgnoreCase(carrier.getAllowedToOperate())) {
+            return CarrierValidationResponse.ineligible(mcNumber, carrier,
+                    label + " is not authorized to operate and is not eligible");
+        }
+        return CarrierValidationResponse.eligible(mcNumber, carrier, label + " is authorized to operate");
+    }
+
     /** @return whether the service is running in mock state (no network calls). */
     public boolean isMockEnabled() {
         return mockEnabled;
+    }
+
+    /** Reduces an MC/docket input ("MC-44110", "MC 44110", "44110") to its digits. */
+    private static String normaliseDocket(String mcNumber) {
+        return mcNumber == null ? "" : mcNumber.replaceAll("[^0-9]", "");
+    }
+
+    /** A short carrier label for validation messages, e.g. {@code ACME TRUCKING LLC (USDOT 3537472)}. */
+    private static String describe(Carrier carrier) {
+        String name = carrier.getLegalName() != null ? carrier.getLegalName() : "Carrier";
+        return carrier.getDotNumber() != null ? name + " (USDOT " + carrier.getDotNumber() + ")" : name;
     }
 
     // --- Mock helpers ---------------------------------------------------------

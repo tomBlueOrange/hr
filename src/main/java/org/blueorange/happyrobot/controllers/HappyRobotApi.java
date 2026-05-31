@@ -3,6 +3,7 @@ package org.blueorange.happyrobot.controllers;
 import com.blueorange.commons.config.OrangeLogger;
 import com.blueorange.commons.config.SafeLogParam;
 import com.blueorange.passportsdk.annotation.Authentication;
+import org.blueorange.happyrobot.entities.fmcsa.CarrierValidationResponse;
 import org.blueorange.happyrobot.entities.search.Query;
 import org.blueorange.happyrobot.entities.search.QueryResponse;
 import org.blueorange.happyrobot.services.FmcsaService;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -49,6 +51,19 @@ public class HappyRobotApi {
         logger.info("Load search request received (page {}, size {})",
                 SafeLogParam.of(query.getPage()), SafeLogParam.of(query.getSize()));
         return loadSearchService.search(query);
+    }
+
+    /**
+     * Validates an inbound carrier against FMCSA before any load is pitched. The agent supplies the
+     * MC/docket number the carrier rep quotes (any common format, e.g. {@code MC-44110} or
+     * {@code 44110}); the response says whether the carrier is {@code eligible} to be worked with,
+     * with a human-readable {@code reason} and the matched carrier details.
+     */
+    @Authentication()
+    @RequestMapping(value = "/carriers/validate", method = RequestMethod.GET)
+    public CarrierValidationResponse validateCarrier(@RequestParam("mcNumber") String mcNumber) {
+        logger.info("Carrier validation request received for MC number {}", SafeLogParam.of(mcNumber));
+        return fmcsaService.validateCarrier(mcNumber);
     }
 
 }

@@ -21,8 +21,10 @@ import org.apache.lucene.document.TextField;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
+import org.apache.lucene.index.Term;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.ScoreDoc;
+import org.apache.lucene.search.TermQuery;
 import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.store.ByteBuffersDirectory;
 import org.apache.lucene.store.Directory;
@@ -40,6 +42,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -255,6 +258,28 @@ public class LoadSearchService {
             logger.error(e, "Failed to execute load search");
             return QueryResponse.error("Failed to execute search: " + e.getMessage(), page, size,
                     System.currentTimeMillis() - started);
+        }
+    }
+
+    /**
+     * Looks up a single load by its exact {@code loadId}. Used to resolve the load behind a booked
+     * call (e.g. to read its weight) when computing metrics. Best-effort: returns empty if the index
+     * is not ready, the id is blank, no load matches, or the lookup fails.
+     */
+    public Optional<Load> findById(String loadId) {
+        if (!ready || loadId == null || loadId.isBlank()) {
+            return Optional.empty();
+        }
+        try (DirectoryReader reader = DirectoryReader.open(directory)) {
+            IndexSearcher searcher = new IndexSearcher(reader);
+            TopDocs topDocs = searcher.search(new TermQuery(new Term("loadId", loadId)), 1);
+            if (topDocs.scoreDocs.length == 0) {
+                return Optional.empty();
+            }
+            return Optional.of(fromDocument(searcher.doc(topDocs.scoreDocs[0].doc)));
+        } catch (Exception e) {
+            logger.warn(e, "Failed to look up load by id {}", SafeLogParam.of(loadId));
+            return Optional.empty();
         }
     }
 
