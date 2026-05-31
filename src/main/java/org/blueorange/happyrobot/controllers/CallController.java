@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -51,6 +52,8 @@ public class CallController {
     @PostMapping("/calls")
     public ResponseEntity<InboundCall> createCall(@RequestBody InboundCall call) {
         logger.info("Create inbound call request received");
+        call.setStarted(new Date());
+        call.setEnded(new Date());
         return new ResponseEntity<>(callService.createCall(call), HttpStatus.CREATED);
     }
 
