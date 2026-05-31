@@ -1,4 +1,4 @@
-package org.blueorange.happyrobot.search;
+package org.blueorange.happyrobot.entities.search;
 
 import java.util.ArrayList;
 import java.util.Arrays;

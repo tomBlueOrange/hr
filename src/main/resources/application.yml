@@ -23,7 +23,17 @@ passport:
 application:
   name: "happyrobot"
   fde-interview:
-    fmcsa: cdc33e44d693a3a58451898d4ec9df862c65b954
+    fmcsa:
+      # live  -> call the real FMCSA QCMobile API.
+      # mock  -> serve the bundled mock carriers from mock-data; no network calls (use this to
+      #          develop offline / without the VPN). Set FMCSA_STATE=mock at launch to enable.
+      state: ${FMCSA_STATE:live}
+      # FMCSA QCMobile API. Override base-url at launch to point at a static-IP proxy or a local
+      # mock when mobile.fmcsa.dot.gov is unreachable (it WAF-blocks non-US / cloud IPs).
+      base-url: ${FMCSA_BASE_URL:https://mobile.fmcsa.dot.gov/qc/services}
+      web-key: ${FMCSA_WEB_KEY:cdc33e44d693a3a58451898d4ec9df862c65b954}
+      # Mock carriers served when state=mock. Point at a file:/ resource to supply your own.
+      mock-data: ${FMCSA_MOCK_DATA:classpath:data/mock_carriers.json}
     load-data: classpath:data/dummy_load_data.json
 management:
   endpoints:

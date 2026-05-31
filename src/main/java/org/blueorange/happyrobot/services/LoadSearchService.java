@@ -5,12 +5,7 @@ import com.blueorange.commons.config.SafeLogParam;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.blueorange.happyrobot.entities.Dimension;
 import org.blueorange.happyrobot.entities.Load;
-import org.blueorange.happyrobot.search.LoadField;
-import org.blueorange.happyrobot.search.LuceneQueryTranslator;
-import org.blueorange.happyrobot.search.Query;
-import org.blueorange.happyrobot.search.QueryCondition;
-import org.blueorange.happyrobot.search.QueryFullTextCondition;
-import org.blueorange.happyrobot.search.QueryResponse;
+import org.blueorange.happyrobot.entities.search.*;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.DoubleDocValuesField;
@@ -215,7 +210,7 @@ public class LoadSearchService {
      * Executes a granular {@link Query} against the index and returns a {@link QueryResponse}
      * carrying the requested page of loads, the total match count, the echoed pagination and the
      * search duration. Never throws: a not-ready index or an invalid query yields a
-     * {@link org.blueorange.happyrobot.search.ResponseState#ERROR} response.
+     * {@link ResponseState#ERROR} response.
      *
      * @param query the query tree, pagination and sort to execute (must not be {@code null})
      */

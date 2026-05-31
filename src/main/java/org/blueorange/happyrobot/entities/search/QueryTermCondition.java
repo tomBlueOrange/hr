@@ -1,4 +1,4 @@
-package org.blueorange.happyrobot.search;
+package org.blueorange.happyrobot.entities.search;
 
 /**
  * A single-field condition whose matching behaviour is selected by {@link QueryTermType}

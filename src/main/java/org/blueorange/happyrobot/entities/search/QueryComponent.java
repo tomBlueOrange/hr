@@ -1,4 +1,4 @@
-package org.blueorange.happyrobot.search;
+package org.blueorange.happyrobot.entities.search;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;

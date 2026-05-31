@@ -1,4 +1,4 @@
-package org.blueorange.happyrobot.search;
+package org.blueorange.happyrobot.entities.search;
 
 /**
  * A numeric range condition over a {@code DOUBLE} or {@code INT} field, mirroring the search-sdk

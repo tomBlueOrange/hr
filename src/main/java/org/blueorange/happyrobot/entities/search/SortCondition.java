@@ -1,4 +1,4 @@
-package org.blueorange.happyrobot.search;
+package org.blueorange.happyrobot.entities.search;
 
 /**
  * Orders results by a single key, mirroring the search-sdk {@code SortCondition}. The key is

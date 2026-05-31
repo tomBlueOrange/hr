@@ -1,4 +1,4 @@
-package org.blueorange.happyrobot.search;
+package org.blueorange.happyrobot.entities.search;
 
 /**
  * The matching strategy used by a {@link QueryTermCondition} against a single field.

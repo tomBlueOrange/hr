@@ -1,4 +1,4 @@
-package org.blueorange.happyrobot.search;
+package org.blueorange.happyrobot.entities.search;
 
 /**
  * A date range condition over a {@code DATE} field, mirroring the search-sdk

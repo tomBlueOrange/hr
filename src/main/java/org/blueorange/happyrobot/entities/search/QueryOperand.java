@@ -1,4 +1,4 @@
-package org.blueorange.happyrobot.search;
+package org.blueorange.happyrobot.entities.search;
 
 /**
  * Boolean operator applied across the children of a {@link QueryCompositeCondition}.
