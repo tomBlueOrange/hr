@@ -1,0 +1,46 @@
+app:
+  version: 0.0.1
+server:
+  port: 9876
+passport:
+  state: local
+  local:
+    groups:
+      - name: admin
+      - name: users
+    users:
+      - id: user-1
+        username: happyrobot
+        password: 8e23d94d-856e-4f21-8141-9ffc6d8e7e9f
+        name: Happy Robot
+        email: tom@blueorange.ai
+        domain: Internal
+        groups:
+          - admin
+          - users
+        tokens:
+          - 9ccd158d-9f50-4ea7-8ede-95ffe1746833
+application:
+  name: "happyrobot"
+  fde-interview:
+    fmcsa: cdc33e44d693a3a58451898d4ec9df862c65b954
+    load-data: classpath:data/dummy_load_data.json
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: always
+      show-components: always
+  health:
+    status:
+      # Worst-to-best ordering. STARTING sits below UP so a warming-up index keeps
+      # the aggregate health out of UP, and is reported as a 503 to callers.
+      order: DOWN,OUT_OF_SERVICE,STARTING,UP
+      http-mapping:
+        STARTING: 503
+        DOWN: 503
+        OUT_OF_SERVICE: 503
+

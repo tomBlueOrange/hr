@@ -1,0 +1,55 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.5.14'
+    id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'org.blueorange'
+version = '0.0.1-SNAPSHOT'
+description = 'happyrobot'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        name = 'GitHubPackagesCommons'
+        url = uri('https://maven.pkg.github.com/Blue-Orange-Ai/java-commons')
+        credentials {
+            username = providers.gradleProperty('gpr.user').getOrNull() ?: System.getenv('GITHUB_ACTOR')
+            password = providers.gradleProperty('gpr.key').getOrNull() ?: System.getenv('GITHUB_TOKEN')
+        }
+    }
+    maven {
+        name = 'GitHubPackagesPassportMono'
+        url = uri('https://maven.pkg.github.com/Blue-Orange-Ai/passport-mono')
+        credentials {
+            username = providers.gradleProperty('gpr.user').getOrNull() ?: System.getenv('GITHUB_ACTOR')
+            password = providers.gradleProperty('gpr.key').getOrNull() ?: System.getenv('GITHUB_TOKEN')
+        }
+    }
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-rest'
+    implementation 'org.springframework.session:spring-session-core'
+    implementation 'com.blueorange:commons:0.0.67'
+    implementation 'com.blueorange:passport-mono-sdk:0.0.5'
+    implementation 'org.apache.lucene:lucene-core:8.9.0'
+    implementation 'org.apache.lucene:lucene-analyzers-common:8.9.0'
+    implementation 'org.apache.lucene:lucene-queryparser:8.9.0'
+    runtimeOnly 'com.h2database:h2'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
