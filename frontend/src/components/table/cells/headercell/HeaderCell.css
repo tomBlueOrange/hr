@@ -1,0 +1,50 @@
+
+
+.blue-orange-header-data-table-cell {
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    padding: 5px 10px;
+    padding-right: 20px;
+    height: 100%;
+}
+
+.blue-orange-header-data-table-cell-resize-handle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 6px;
+    cursor: col-resize;
+    user-select: none;
+    height: 100%;
+    background: transparent;
+}
+
+.blue-orange-header-data-table-cell-resize-handle:hover {
+    background: dodgerblue !important;
+}
+
+.blue-orange-header-data-table-cell-control {
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 5px;
+    height: 12px;
+    width: 12px;
+    border-radius: 2px;
+}
+
+.blue-orange-data-table-theme-object-list .blue-orange-header-data-table-cell {
+    background-color: #f7f8f9;
+    border: none;
+    border-bottom: 1px solid #e0e1e2;
+}
+
+.blue-orange-header-data-table-td {
+    position: relative;
+}
+

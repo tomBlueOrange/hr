@@ -1,0 +1,13 @@
+
+.blue-orange-drawer-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.blue-orange-drawer-header-label {
+    font-size: 1.4rem;
+    font-weight: 700;
+}

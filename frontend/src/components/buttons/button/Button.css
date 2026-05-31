@@ -1,0 +1,134 @@
+
+
+.foundations-default-btn {
+    color: white;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 0.875rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.foundations-primary-btn {
+    border: 1px solid var(--blue-orange-light-primary-btn-border-color);
+    background-color: var(--blue-orange-light-primary-btn-background-color);
+    color: var(--blue-orange-light-primary-btn-color);
+}
+
+.dark .foundations-primary-btn {
+    border: 1px solid var(--blue-orange-dark-primary-btn-border-color);
+    background-color: var(--blue-orange-dark-primary-btn-background-color);
+    color: var(--blue-orange-dark-primary-btn-color);
+}
+
+.foundations-secondary-btn {
+    border: 1px solid var(--blue-orange-light-secondary-btn-border-color);
+    background-color: var(--blue-orange-light-secondary-btn-background-color);
+    color: var(--blue-orange-light-secondary-btn-color);
+}
+
+.dark .foundations-secondary-btn {
+    border: 1px solid var(--blue-orange-dark-secondary-btn-border-color);
+    background-color: var(--blue-orange-dark-secondary-btn-background-color);
+    color: var(--blue-orange-dark-secondary-btn-color);
+}
+
+.foundations-danger-btn {
+    border: 1px solid var(--blue-orange-light-danger-btn-border-color);
+    background-color: var(--blue-orange-light-danger-btn-background-color);
+    color: var(--blue-orange-light-danger-btn-color);
+}
+
+.dark .foundations-danger-btn {
+    border: 1px solid var(--blue-orange-dark-danger-btn-border-color);
+    background-color: var(--blue-orange-dark-danger-btn-background-color);
+    color: var(--blue-orange-dark-danger-btn-color);
+}
+
+.foundations-success-btn {
+    border: 1px solid var(--blue-orange-light-success-btn-border-color);
+    background-color: var(--blue-orange-light-success-btn-background-color);
+    color: var(--blue-orange-light-success-btn-color);
+}
+
+.dark .foundations-success-btn {
+    border: 1px solid var(--blue-orange-dark-success-btn-border-color);
+    background-color: var(--blue-orange-dark-success-btn-background-color);
+    color: var(--blue-orange-dark-success-btn-color);
+}
+
+.foundations-warning-btn {
+    border: 1px solid var(--blue-orange-light-warning-btn-border-color);
+    background-color: var(--blue-orange-light-warning-btn-background-color);
+    color: var(--blue-orange-light-warning-btn-color);
+}
+
+.dark .foundations-warning-btn {
+    border: 1px solid var(--blue-orange-dark-warning-btn-border-color);
+    background-color: var(--blue-orange-dark-warning-btn-background-color);
+    color: var(--blue-orange-dark-warning-btn-color);
+}
+
+.foundations-clear-btn {
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: var(--blue-orange-light-clear-btn-color);
+}
+
+.dark .foundations-clear-btn {
+    color: var(--blue-orange-dark-clear-btn-color);
+}
+
+/* Size variants */
+.foundations-btn-sm {
+    height: 28px;
+    font-size: 0.75rem;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.foundations-btn-lg {
+    height: 44px;
+    font-size: 1rem;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.foundations-btn-disabled{
+    cursor: not-allowed;
+}
+
+.foundations-default-btn-icon-left {
+    margin-right: 10px;
+}
+
+.foundations-default-btn-icon-right {
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.foundations-btn-rotate-spinner {
+    display: inline-block;
+    animation: spin 0.4s linear infinite;
+}
+
+.success-animation { margin:150px auto;}
+
+
+
+

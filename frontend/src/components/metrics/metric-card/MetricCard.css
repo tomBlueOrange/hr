@@ -1,0 +1,65 @@
+
+
+.blue-orange-metrics-card {
+    background-color: white;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid var(--blue-orange-light-default-border-color);
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.dark .blue-orange-metrics-card {
+    border: 1px solid var(--blue-orange-dark-default-border-color);
+}
+
+.blue-orange-metrics-card-icon {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 20px;
+    flex-shrink: 0;
+    background-color: var(--blue-orange-light-metrics-card-background-color);
+    color: var(--blue-orange-light-metrics-card-color);
+}
+
+.dark .blue-orange-metrics-card-icon {
+    background-color: var(--blue-orange-dark-metrics-card-background-color);
+    color: var(--blue-orange-dark-metrics-card-color);
+}
+
+.blue-orange-metrics-card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.blue-orange-metrics-card-body-title {
+    font-size: 0.6rem;
+    opacity: 0.6;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.blue-orange-metrics-card-body-title-top {
+    margin-bottom: 3px;
+}
+
+.blue-orange-metrics-card-body-title-bottom {
+    margin-top: 3px;
+}
+
+.blue-orange-metrics-card-value {
+    font-weight: 700;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,79 @@
+/*
+ * Theme variables consumed by the search query editor and its input/button/
+ * datepicker/dropdown dependencies. Copied from the @blue-orange-ai/foundations-core
+ * design tokens so the components render correctly outside the foundations library.
+ * Add the `dark` class to an ancestor element to switch to the dark palette.
+ */
+:root {
+      --blue-orange-dark-badge-background-color: #18181b;
+      --blue-orange-dark-badge-color: white;
+      --blue-orange-dark-clear-btn-color: white;
+      --blue-orange-dark-danger-btn-background-color: #e11d48;
+      --blue-orange-dark-danger-btn-border-color: #e11d48;
+      --blue-orange-dark-danger-btn-color: white;
+      --blue-orange-dark-date-picker-border-color: #28282a;
+      --blue-orange-dark-date-picker-day-color: white;
+      --blue-orange-dark-date-picker-day-current-color: white;
+      --blue-orange-dark-date-picker-day-heading-color: #71717a;
+      --blue-orange-dark-date-picker-selected-day-background-color: white;
+      --blue-orange-dark-date-picker-selected-day-border-color: white;
+      --blue-orange-dark-date-picker-selected-day-color: black;
+      --blue-orange-dark-help-icon-color: #2c3e50;
+      --blue-orange-dark-input-dropdown-item-color: white;
+      --blue-orange-dark-input-dropdown-item-focus-background-color: #28282a;
+      --blue-orange-dark-input-focus-border-color: white;
+      --blue-orange-dark-input-search-background: #28282a;
+      --blue-orange-dark-input-search-icon-color: #28282a;
+      --blue-orange-dark-primary-btn-background-color: black;
+      --blue-orange-dark-primary-btn-border-color: black;
+      --blue-orange-dark-primary-btn-color: white;
+      --blue-orange-dark-required-icon-color: #e74c3c;
+      --blue-orange-dark-secondary-btn-background-color: white;
+      --blue-orange-dark-secondary-btn-border-color: #e0e1e2;
+      --blue-orange-dark-secondary-btn-color: black;
+      --blue-orange-dark-success-btn-background-color: #16a34b;
+      --blue-orange-dark-success-btn-border-color: #16a34b;
+      --blue-orange-dark-success-btn-color: white;
+      --blue-orange-dark-warning-btn-background-color: #f97317;
+      --blue-orange-dark-warning-btn-border-color: #f97317;
+      --blue-orange-dark-warning-btn-color: white;
+      --blue-orange-light-badge-background-color: #18181b;
+      --blue-orange-light-badge-color: white;
+      --blue-orange-light-clear-btn-color: black;
+      --blue-orange-light-danger-btn-background-color: #e11d48;
+      --blue-orange-light-danger-btn-border-color: #e11d48;
+      --blue-orange-light-danger-btn-color: white;
+      --blue-orange-light-date-picker-background-color: white;
+      --blue-orange-light-date-picker-border-color: #e0e1e2;
+      --blue-orange-light-date-picker-day-color: #393939;
+      --blue-orange-light-date-picker-day-current-color: black;
+      --blue-orange-light-date-picker-day-heading-color: #71717a;
+      --blue-orange-light-date-picker-selected-day-background-color: black;
+      --blue-orange-light-date-picker-selected-day-border-color: black;
+      --blue-orange-light-date-picker-selected-day-color: white;
+      --blue-orange-light-help-icon-color: #2c3e50;
+      --blue-orange-light-input-dropdown-item-color: black;
+      --blue-orange-light-input-dropdown-item-focus-background-color: #f7f8f9;
+      --blue-orange-light-input-dropdown-item-focus-color: #f7f8f9;
+      --blue-orange-light-input-focus-border-color: black;
+      --blue-orange-light-input-search-background: #f7f7f9;
+      --blue-orange-light-input-search-icon-color: #f7f7f9;
+      --blue-orange-light-primary-btn-background-color: black;
+      --blue-orange-light-primary-btn-border-color: black;
+      --blue-orange-light-primary-btn-color: white;
+      --blue-orange-light-required-icon-color: #e74c3c;
+      --blue-orange-light-secondary-btn-background-color: white;
+      --blue-orange-light-secondary-btn-border-color: #e0e1e2;
+      --blue-orange-light-secondary-btn-color: black;
+      --blue-orange-light-success-btn-background-color: #16a34b;
+      --blue-orange-light-success-btn-border-color: #16a34b;
+      --blue-orange-light-success-btn-color: white;
+      --blue-orange-light-warning-btn-background-color: #f97317;
+      --blue-orange-light-warning-btn-border-color: #f97317;
+      --blue-orange-light-warning-btn-color: white;
+
+      /* Not defined in core's index.css (falls back to the browser default there);
+         set to core's placeholder gray so inputs read sensibly here. */
+      --blue-orange-light-input-placeholder-color: #757575;
+      --blue-orange-dark-input-placeholder-color: #757575;
+}

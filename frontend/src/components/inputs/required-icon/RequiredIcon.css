@@ -1,0 +1,16 @@
+
+
+
+.blue-orange-default-required-icon{
+    font-size: 0.6rem;
+    color: var(--blue-orange-light-required-icon-color);
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.dark .blue-orange-default-required-icon{
+    color: var(--blue-orange-dark-required-icon-color);
+}
+

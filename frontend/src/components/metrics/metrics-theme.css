@@ -1,0 +1,27 @@
+/*
+ * Theme variables consumed by the metrics component CSS.
+ * Copied from the @blue-orange-ai/foundations-core design tokens so the
+ * metrics render correctly outside the foundations library.
+ * Add the `dark` class to an ancestor element to switch to the dark palette.
+ */
+:root {
+    --blue-orange-light-default-border-color: #e0e1e2;
+    --blue-orange-dark-default-border-color: #28282a;
+
+    --blue-orange-light-input-color: black;
+    --blue-orange-dark-input-color: white;
+    --blue-orange-light-input-border-color: #e0e1e2;
+    --blue-orange-dark-input-border-color: #28282a;
+    --blue-orange-light-input-background-color: white;
+    --blue-orange-dark-input-background-color: black;
+
+    --blue-orange-light-simple-metric-border-color: #e0e1e2;
+    --blue-orange-dark-simple-metric-border-color: #28282a;
+    --blue-orange-light-simple-metric-color: black;
+    --blue-orange-dark-simple-metric-color: white;
+
+    --blue-orange-light-metrics-card-background-color: #E0e1e2;
+    --blue-orange-dark-metrics-card-background-color: #28282a;
+    --blue-orange-light-metrics-card-color: black;
+    --blue-orange-dark-metrics-card-color: white;
+}

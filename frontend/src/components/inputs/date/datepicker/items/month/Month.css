@@ -1,0 +1,62 @@
+
+
+.blue-orange-date-picker-month {
+    width: 252px;
+    display: flex;
+    border-collapse: collapse;
+}
+
+.blue-orange-date-picker-day-heading {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--blue-orange-light-date-picker-day-heading-color);
+    width: 32px;
+    height: 32px;
+}
+
+.dark .blue-orange-date-picker-day-heading {
+    color: var(--blue-orange-dark-date-picker-day-heading-color);
+}
+
+.blue-orange-date-picker-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.blue-orange-date-picker-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.blue-orange-date-picker-month-heading-text-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.blue-orange-date-picker-month-heading {
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    position: relative;
+    margin-right: 10px;
+}
+
+.blue-orange-date-picker-year-heading {
+    display: flex;
+    position: relative;
+}
+
+.blue-orange-date-picker-header-select {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+

@@ -1,0 +1,20 @@
+
+
+.blue-orange-simple-metric{
+    height: 34px;
+    width: 34px;
+    border-radius: 8px;
+    border: 1px solid var(--blue-orange-light-simple-metric-border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: var(--blue-orange-light-simple-metric-color);
+}
+
+.dark .blue-orange-simple-metric{
+    border: 1px solid var(--blue-orange-dark-simple-metric-border-color);
+    color: var(--blue-orange-dark-simple-metric-color);
+}

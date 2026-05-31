@@ -1,0 +1,17 @@
+
+.blue-orange-default-data-table-cell {
+    font-size: 14px;
+    position: relative;
+    padding: 5px 5px;
+}
+
+
+.blue-orange-data-table-theme-object-list .blue-orange-default-data-table-cell{
+    border: none;
+    border-bottom: 1px solid #e0e1e2;
+}
+
+.blue-orange-default-data-table-skeleton {
+    width: 100%;
+    height: 22px;
+}

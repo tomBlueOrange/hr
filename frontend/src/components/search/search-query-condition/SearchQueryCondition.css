@@ -1,0 +1,85 @@
+.blue-orange-search-query-condition-cont {
+    width: 100%;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blue-orange-search-query-condition-cont-header {
+    width: 100%;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 48px;
+    justify-content: space-between;
+}
+
+.blue-orange-search-query-condition-cont-body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.blue-orange-search-query-condition-start-text {
+    text-transform: capitalize;
+    opacity: 0.8;
+    font-weight: 600;
+    margin-right: 20px;
+    flex-shrink: 0;
+    font-size: 0.8rem;
+}
+
+.blue-orange-search-query-condition-variable-selection {
+    flex-grow: 1;
+}
+
+.blue-orange-search-query-condition-match-selection {
+    margin-left: 10px;
+}
+
+.blue-orange-search-query-condition-match-selection .blue-orange-dropdown-icon {
+    display: none;
+}
+
+.blue-orange-search-query-condition-match-selection .blue-orange-dropdown-selection {
+    width: 100%;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.blue-orange-search-query-condition-user-input {
+    margin-left: 4px;
+    flex-grow: 1;
+}
+
+.blue-orange-search-query-condition-geo-point-header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blue-orange-search-query-condition-checkbox {
+    width: 80px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.blue-orange-search-query-condition-checkbox-label {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 0.6rem;
+    font-weight: 600;
+    text-align: center;
+    bottom: 2px;
+    opacity: 0.4;
+}

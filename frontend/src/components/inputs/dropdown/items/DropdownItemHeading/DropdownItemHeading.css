@@ -1,0 +1,20 @@
+
+
+.blue-orange-dropdown-item-image {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    cursor: pointer;
+}
+
+.blue-orange-dropdown-item-text-heading {
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+

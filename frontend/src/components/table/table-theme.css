@@ -1,0 +1,24 @@
+/*
+ * Theme variables consumed by the table, context-menu and text-decoration
+ * component CSS. Copied from the @blue-orange-ai/foundations-core design tokens
+ * so the DataTable renders correctly outside the foundations library.
+ * Add the `dark` class to an ancestor element to switch to the dark palette.
+ */
+:root {
+    --blue-orange-light-default-border-color: #e0e1e2;
+    --blue-orange-dark-default-border-color: #28282a;
+
+    --blue-orange-light-default-text-color: black;
+    --blue-orange-dark-default-text-color: black;
+
+    --blue-orange-light-table-border-color: black;
+    --blue-orange-dark-table-border-color: white;
+
+    --blue-orange-light-context-menu-background: white;
+    --blue-orange-dark-context-menu-background: #28282a;
+    --blue-orange-light-context-menu-row-hover-background: #e0e1e2;
+    --blue-orange-dark-context-menu-row-hover-background: #47474a;
+
+    --blue-orange-light-input-dropdown-item-hover-color: #f7f8f9;
+    --blue-orange-dark-input-dropdown-item-hover-color: black;
+}

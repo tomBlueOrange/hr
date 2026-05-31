@@ -1,0 +1,40 @@
+
+
+.blue-orange-text-area-input-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+}
+
+.blue-orange-default-text-area{
+    min-width: calc(100% - 10px);
+    max-width: calc(100% - 10px);
+    border: 1px solid var(--blue-orange-light-input-border-color);
+    background-color: var(--blue-orange-light-input-background-color);
+    color: var(--blue-orange-light-input-color);
+    border-radius: 4px;
+    padding: 10px 5px;
+    font-family: inherit;
+    font-size: 0.8rem;
+}
+
+.dark .blue-orange-default-text-area{
+    min-width: calc(100% - 10px);
+    max-width: calc(100% - 10px);
+    border: 1px solid var(--blue-orange-dark-input-border-color);
+    background-color: var(--blue-orange-dark-input-background-color);
+    color: var(--blue-orange-dark-input-color);
+    border-radius: 4px;
+    padding: 10px 5px;
+    font-family: inherit;
+    font-size: 0.8rem;
+}
+
+.blue-orange-default-text-area:focus {
+    outline: 1.5px solid var(--blue-orange-light-input-focus-border-color);
+}
+
+.dark .blue-orange-default-text-area:focus {
+    outline: 1.5px solid var(--blue-orange-dark-input-focus-border-color);
+}

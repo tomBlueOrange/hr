@@ -1,0 +1,26 @@
+
+
+.blue-orange-dropdown-item-icon {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    cursor: pointer;
+}
+
+.blue-orange-dropdown-item-icon-src {
+    font-size: 0.8rem;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blue-orange-dropdown-item-image-icon {
+    margin-left: 10px;
+    width: calc(100% - 42px);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+}
+

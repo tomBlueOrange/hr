@@ -1,0 +1,148 @@
+/* Shared styling for the foundations component demos. */
+
+.demo-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding: 12px 24px;
+    background: #1c2833;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.demo-nav-brand {
+    margin-right: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.demo-nav-btn {
+    padding: 6px 14px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background: transparent;
+    color: #aeb6bf;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+}
+
+.demo-nav-btn:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.demo-nav-btn.active {
+    color: #1c2833;
+    background: #ffffff;
+}
+
+.demo-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 32px 24px 64px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1c2833;
+}
+
+.demo-title {
+    margin: 0 0 4px;
+    font-size: 1.8rem;
+}
+
+.demo-subtitle {
+    margin: 0 0 32px;
+    color: #5d6d7e;
+    font-size: 0.95rem;
+}
+
+.demo-card {
+    margin-bottom: 40px;
+    padding: 20px 24px 24px;
+    border: 1px solid #e0e1e2;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.demo-card h2 {
+    margin: 0 0 4px;
+    font-size: 1.2rem;
+}
+
+.demo-card-hint {
+    margin: 0 0 16px;
+    color: #7f8c8d;
+    font-size: 0.85rem;
+}
+
+.demo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.demo-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+/* A neutral button used by the demos to trigger overlays/actions. */
+.demo-btn {
+    padding: 9px 16px;
+    border: 1px solid #d0d3d4;
+    border-radius: 8px;
+    background: #2e86c1;
+    color: #ffffff;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.demo-btn:hover {
+    background: #2874a6;
+}
+
+.demo-btn.secondary {
+    background: #ffffff;
+    color: #1c2833;
+}
+
+.demo-btn.secondary:hover {
+    background: #f4f6f7;
+}
+
+.demo-btn.danger {
+    background: #ffffff;
+    color: #c0392b;
+    border-color: #e6b0aa;
+}
+
+/* JSON output panel used by the search demo. */
+.demo-json {
+    margin: 0;
+    padding: 14px 16px;
+    background: #1c2833;
+    color: #e8f0f4;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    max-height: 320px;
+    overflow: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+/* DataTable needs a bounded, scrollable frame for sticky headers / scrolling. */
+.demo-table-frame {
+    width: 100%;
+    max-height: 420px;
+    overflow: auto;
+    border: 1px solid #e0e1e2;
+    border-radius: 8px;
+}

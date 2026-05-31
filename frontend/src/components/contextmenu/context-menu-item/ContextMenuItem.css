@@ -1,0 +1,19 @@
+
+
+.blue-orange-context-menu-item-left-cont {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.blue-orange-context-menu-item {
+    cursor: pointer;
+    font-weight: 400;
+    color: var(--blue-orange-light-default-text-color);
+}
+
+.blue-orange-context-menu-item:hover {
+    background-color: var(--blue-orange-light-input-dropdown-item-hover-color);
+    transition: 0.2s;
+    color: var(--blue-orange-light-default-text-color);
+}

@@ -1,0 +1,17 @@
+
+
+.blue-orange-badge{
+    font-size: .75rem;
+    line-height: 1rem;
+    font-weight: 600;
+    padding: 2px 10px;
+    border-radius: 4px;
+    background-color: var(--blue-orange-light-badge-background-color);
+    color: var(--blue-orange-light-badge-color);
+    width: fit-content;
+}
+
+.dark .blue-orange-badge{
+    background-color: var(--blue-orange-dark-badge-background-color);
+    color: var(--blue-orange-dark-badge-color);
+}

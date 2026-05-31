@@ -1,0 +1,12 @@
+
+
+
+.blue-orange-default-help-icon{
+    font-size: 0.8rem;
+    color: var(--blue-orange-light-help-icon-color);
+}
+
+.dark .blue-orange-default-help-icon{
+    font-size: 0.8rem;
+    color: var(--blue-orange-dark-help-icon-color);
+}

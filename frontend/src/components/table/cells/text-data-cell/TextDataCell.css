@@ -1,0 +1,15 @@
+
+.blue-orange-data-table-text-cell {
+    font-size: 14px;
+    position: relative;
+    padding: 5px 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+
+.blue-orange-data-table-theme-object-list .blue-orange-data-table-text-cell{
+    border: none;
+    border-bottom: 1px solid #e0e1e2;
+}

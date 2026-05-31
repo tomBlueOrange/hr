@@ -1,0 +1,39 @@
+
+.blue-orange-primary-data-table-cell {
+    font-size: 14px;
+    position: relative;
+    padding: 5px 5px;
+}
+
+.blue-orange-primary-data-table-cell-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.blue-orange-data-table-theme-object-list .blue-orange-primary-data-table-cell {
+    border: none;
+    border-bottom: 1px solid #e0e1e2;
+}
+
+.blue-orange-primary-data-table-image {
+    margin-right: 15px;
+}
+
+.blue-orange-primary-data-text-body {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.blue-orange-primary-data-primary-text {
+    font-weight: 700;
+}
+
+.blue-orange-primary-data-secondary-text {
+    font-weight: 500;
+    opacity: 0.6;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+

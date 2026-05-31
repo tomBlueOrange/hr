@@ -1,0 +1,265 @@
+:root {
+    --hr-bg: #f4f6f8;
+    --hr-surface: #ffffff;
+    --hr-border: #e0e1e2;
+    --hr-ink: #1c2833;
+    --hr-muted: #5d6d7e;
+    --hr-accent: #2e86c1;
+}
+
+.hr-app {
+    min-height: 100vh;
+    /*background: var(--hr-bg);*/
+    background: white;
+    color: var(--hr-ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ---- Header ------------------------------------------------------------- */
+.hr-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 12px 24px;
+    background: #1c2833;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+.hr-header-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.hr-header-brand i {
+    color: #ef7c1a;
+}
+
+.hr-tabs {
+    display: flex;
+    gap: 6px;
+}
+
+.hr-tab {
+    border: none;
+    background: transparent;
+    color: #cbd3da;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.hr-tab:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+
+.hr-tab-active,
+.hr-tab-active:hover {
+    background: #fff;
+    color: #1c2833;
+    font-weight: 600;
+}
+
+/* ---- Range selector ----------------------------------------------------- */
+.hr-range-selector {
+    display: flex;
+    gap: 4px;
+    margin-left: auto;
+}
+
+.hr-range-btn {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    color: #cbd3da;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    min-width: 36px;
+}
+
+.hr-range-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.hr-range-btn-active,
+.hr-range-btn-active:hover {
+    background: var(--hr-accent);
+    border-color: var(--hr-accent);
+    color: #fff;
+    font-weight: 600;
+}
+
+/* ---- Main / cards ------------------------------------------------------- */
+.hr-main {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.hr-card {
+    background: var(--hr-surface);
+    border: 1px solid var(--hr-border);
+    border-radius: 4px;
+    padding: 20px 24px 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.hr-card-title {
+    margin: 0 0 14px;
+    font-size: 1.1rem;
+}
+
+.hr-card-hint {
+    margin: -8px 0 14px;
+    color: var(--hr-muted);
+    font-size: 0.85rem;
+}
+
+.hr-card-hint code {
+    background: #eef2f5;
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.hr-chart-frame {
+    height: 320px;
+    width: 100%;
+}
+
+/* ---- Overview heading row ----------------------------------------------- */
+.hr-overview-head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.hr-overview-head .hr-range-selector {
+    width: 200px;
+}
+
+/* ---- KPI grid ----------------------------------------------------------- */
+.hr-kpis {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 4px;
+    margin-bottom: 20px;
+}
+
+/* ---- Insights ----------------------------------------------------------- */
+.hr-insights {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hr-insights li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.92rem;
+    line-height: 1.45;
+}
+
+.hr-insights i {
+    color: #f1a417;
+    margin-top: 2px;
+}
+
+/* ---- Search / table ----------------------------------------------------- */
+.hr-result-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    font-size: 0.88rem;
+    color: var(--hr-muted);
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.hr-result-bar-bottom {
+    margin-bottom: 0;
+    margin-top: 14px;
+}
+
+.hr-pagination {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hr-page-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    border: 1px solid var(--hr-border);
+    background: #fff;
+    color: var(--hr-ink);
+    padding: 5px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.hr-page-btn:hover:not(:disabled) {
+    border-color: var(--hr-accent);
+    color: var(--hr-accent);
+}
+
+.hr-page-btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.hr-page-num {
+    font-size: 0.85rem;
+}
+
+.hr-table-frame {
+    overflow: auto;
+    border: 1px solid var(--hr-border);
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+}
+
+/* Uniform font size for the load search table and all its cells. */
+.hr-table-frame,
+.hr-table-frame * {
+    font-size: 0.8rem;
+}
+
+.hr-object-table-header {
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--hr-muted);
+}
+
+/* ---- Error -------------------------------------------------------------- */
+.hr-error {
+    background: #fdecea;
+    border: 1px solid #f5c6cb;
+    color: #a31515;
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-size: 0.88rem;
+}

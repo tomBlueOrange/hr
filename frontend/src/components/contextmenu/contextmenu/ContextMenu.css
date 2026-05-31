@@ -1,0 +1,82 @@
+
+
+
+.blue-orange-default-context-menu{
+    position: fixed;
+    z-index: 10;
+    background-color: var(--blue-orange-light-context-menu-background);
+    min-width: 200px;
+    overflow-y: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.dark .blue-orange-default-context-menu{
+    position: fixed;
+    z-index: 10;
+    background-color: var(--blue-orange-dark-context-menu-background);
+    min-width: 50px;
+    overflow-y: auto;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.32), 0 2px 10px 0 rgba(0, 0, 0, 0.24);
+}
+
+.blue-orange-default-context-menu-row{
+    width: calc(100% - 10px);
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.blue-orange-default-context-menu-row:hover{
+    background-color: var(--blue-orange-light-context-menu-row-hover-background);
+    transition: 0.2s;
+}
+
+.dark .blue-orange-default-context-menu-row:hover {
+    background-color: var(--blue-orange-dark-context-menu-row-hover-background);
+}
+
+.blue-orange-default-context-menu-row-icon{
+    margin-right: 15px;
+}
+
+.blue-orange-default-context-menu-row-right-icon{
+    margin-left: 15px;
+}
+
+.blue-orange-default-context-menu-row-general-text{
+    font-size: 0.7rem;
+}
+
+.blue-orange-context-menu-general-row {
+    padding: 6px 32px 6px 32px;
+    width: calc(100% - 64px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    font-size: .8rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+}
+
+.blue-orange-context-menu-group-arrow {
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+    position: absolute;
+    height: 100%;
+    right: 12px;
+}
+
+.blue-orange-context-menu-group-active {
+    background-color: var(--blue-orange-light-input-dropdown-item-hover-color);
+}
+
+.dark .blue-orange-context-menu-group-active {
+    background-color: var(--blue-orange-dark-context-menu-row-hover-background);
+}

@@ -1,0 +1,11 @@
+
+
+.blue-orange-dropdown-item-text {
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    cursor: inherit;
+}
+

@@ -1,0 +1,10 @@
+/*
+ * Theme variables consumed by the modal and drawer component CSS.
+ * Copied from the @blue-orange-ai/foundations-core design tokens so the
+ * layouts render correctly outside the foundations library.
+ * Add the `dark` class to an ancestor element to switch to the dark palette.
+ */
+:root {
+    --blue-orange-light-default-card-background: white;
+    --blue-orange-dark-default-card-background: #28282a;
+}

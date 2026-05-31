@@ -1,0 +1,30 @@
+.foundations-error-cross {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: block;
+    stroke-miterlimit: 10;
+    fill-opacity: 0;
+    fill: white;
+    animation: foundations-error-fill .2s ease-in-out .2s forwards, foundations-error-scale .3s ease-in-out .7s both;
+    position:relative;
+}
+
+@keyframes foundations-error-fill {
+    from {
+        fill-opacity: 0;
+    }
+    to {
+        fill-opacity: 1;
+    }
+}
+
+@keyframes foundations-error-scale {
+    0%, 100% {
+        transform: none;
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1);
+    }
+}

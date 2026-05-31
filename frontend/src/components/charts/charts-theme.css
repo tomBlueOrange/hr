@@ -1,0 +1,19 @@
+/*
+ * Theme variables consumed by the chart component CSS.
+ * Copied from the @blue-orange-ai/foundations-core design tokens so the
+ * tooltips and legends render correctly outside the foundations library.
+ * Add the `dark` class to an ancestor element to switch to the dark palette.
+ */
+:root {
+    --blue-orange-light-chart-tooltip-background: black;
+    --blue-orange-light-chart-tooltip-general-text-color: white;
+    --blue-orange-light-chart-tooltip-title-color: #ABB4BE;
+    --blue-orange-light-chart-tooltip-value-color: white;
+    --blue-orange-light-default-border-color: #e0e1e2;
+    --blue-orange-light-default-text-color: black;
+
+    --blue-orange-dark-chart-tooltip-background: #28282a;
+    --blue-orange-dark-chart-tooltip-general-text-color: black;
+    --blue-orange-dark-chart-tooltip-title-color: white;
+    --blue-orange-dark-chart-tooltip-value-color: white;
+}

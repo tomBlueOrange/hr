@@ -1,0 +1,29 @@
+
+
+.blue-orange-metrics {
+    display: flex;
+    flex-direction: column;
+}
+
+.blue-orange-metrics-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blue-orange-metrics-value {
+    box-sizing: border-box;
+    width: calc(100% - 10px);
+    border: 1px solid var(--blue-orange-light-input-border-color);
+    height: 36px;
+    background-color: var(--blue-orange-light-input-background-color);
+    color: var(--blue-orange-light-input-color);
+    border-radius: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    font-size: 0.8rem;
+}
