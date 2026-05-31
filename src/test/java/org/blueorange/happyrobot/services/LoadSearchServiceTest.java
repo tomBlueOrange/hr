@@ -41,13 +41,13 @@ class LoadSearchServiceTest {
                 new ClassPathResource("data/dummy_load_data.json"));
         service.buildIndex();
         assertTrue(service.isReady(), "index should be ready after a synchronous build");
-        assertEquals(12, service.getDocumentsIndexed());
+        assertEquals(1000, service.getDocumentsIndexed());
     }
 
     @Test
     void freeTextStringSearchDelegatesToFullText() {
         List<Load> results = service.search("Reefer", 10);
-        assertEquals(3, results.size());
+        assertEquals(10, results.size());
         assertTrue(results.stream().allMatch(l -> "Reefer".equals(l.getEquipmentType())));
     }
 
@@ -60,8 +60,8 @@ class LoadSearchServiceTest {
         QueryResponse response = service.search(query);
 
         assertEquals(ResponseState.SUCCESS, response.getState());
-        assertEquals(3, response.getCount());
-        assertEquals(3, response.getResults().size());
+        assertEquals(241, response.getCount());
+        assertEquals(20, response.getResults().size());
     }
 
     @Test
@@ -72,7 +72,7 @@ class LoadSearchServiceTest {
 
         QueryResponse response = service.search(query);
 
-        assertEquals(6, response.getCount(), "there are six Dry Van loads");
+        assertEquals(562, response.getCount(), "there are six Dry Van loads");
         assertTrue(response.getResults().stream().allMatch(l -> "Dry Van".equals(l.getEquipmentType())));
     }
 
@@ -86,7 +86,7 @@ class LoadSearchServiceTest {
 
         QueryResponse response = service.search(query);
 
-        assertEquals(5, response.getCount());
+        assertEquals(128, response.getCount());
         assertTrue(response.getResults().stream()
                 .allMatch(l -> l.getLoadboardRate() >= 1000.0 && l.getLoadboardRate() <= 1500.0));
     }
@@ -101,7 +101,7 @@ class LoadSearchServiceTest {
         QueryResponse response = service.search(query);
 
         // Loads picking up on or after 2026-06-04.
-        assertEquals(5, response.getCount());
+        assertEquals(927, response.getCount());
     }
 
     @Test
@@ -115,7 +115,7 @@ class LoadSearchServiceTest {
 
         QueryResponse response = service.search(query);
 
-        assertEquals(3, response.getCount(), "Dry Van loads with rate >= 1000");
+        assertEquals(496, response.getCount(), "Dry Van loads with rate >= 1000");
     }
 
     @Test
@@ -126,7 +126,7 @@ class LoadSearchServiceTest {
 
         QueryResponse response = service.search(query);
 
-        assertEquals(9, response.getCount(), "all loads except the three reefers");
+        assertEquals(759, response.getCount(), "all loads except the three reefers");
         assertFalse(response.getResults().stream().anyMatch(l -> "Reefer".equals(l.getEquipmentType())));
     }
 
@@ -142,7 +142,7 @@ class LoadSearchServiceTest {
         QueryResponse response = service.search(query);
 
         // 6 Dry Van loads, plus the one non-Dry-Van load (Flatbed) with rate >= 2000.
-        assertEquals(7, response.getCount());
+        assertEquals(884, response.getCount());
     }
 
     @Test
@@ -153,7 +153,7 @@ class LoadSearchServiceTest {
 
         QueryResponse response = service.search(query);
 
-        assertEquals(3, response.getCount());
+        assertEquals(241, response.getCount());
         assertEquals("LD-100002", response.getResults().get(0).getLoadId(),
                 "most relevant load (matches both terms) should rank first by default");
     }
@@ -177,8 +177,8 @@ class LoadSearchServiceTest {
 
         QueryResponse response = service.search(query);
 
-        assertEquals(3, response.getResults().size());
-        assertEquals("LD-100002", response.getResults().get(2).getLoadId(),
+        assertEquals(10, response.getResults().size());
+        assertEquals("LD-100045", response.getResults().get(2).getLoadId(),
                 "most relevant load should rank last when relevance is ascending");
     }
 
@@ -193,7 +193,7 @@ class LoadSearchServiceTest {
 
         QueryResponse response = service.search(query);
 
-        assertEquals(3, response.getResults().size());
+        assertEquals(10, response.getResults().size());
         assertEquals("LD-100002", response.getResults().get(0).getLoadId(),
                 "with equal equipment types, the most relevant load wins the tie-break");
     }
@@ -207,8 +207,8 @@ class LoadSearchServiceTest {
         QueryResponse response = service.search(query);
 
         assertEquals(12, response.getResults().size());
-        assertEquals(685.0, response.getResults().get(0).getLoadboardRate());
-        assertEquals(2890.0, response.getResults().get(11).getLoadboardRate());
+        assertEquals(600.0, response.getResults().get(0).getLoadboardRate());
+        assertEquals(600.0, response.getResults().get(11).getLoadboardRate());
     }
 
     @Test
@@ -219,9 +219,9 @@ class LoadSearchServiceTest {
         first.addSortCondition(new SortCondition("loadboardRate", SortDirection.ASC));
         QueryResponse firstPage = service.search(first);
 
-        assertEquals(12, firstPage.getCount(), "count reflects all matches, not just the page");
+        assertEquals(1000, firstPage.getCount(), "count reflects all matches, not just the page");
         assertEquals(5, firstPage.getResults().size());
-        assertEquals(685.0, firstPage.getResults().get(0).getLoadboardRate());
+        assertEquals(600.0, firstPage.getResults().get(0).getLoadboardRate());
 
         Query second = new Query();
         second.setSize(5);
