@@ -140,6 +140,19 @@
     font-size: 1.1rem;
 }
 
+/* Card title row with a trailing action (e.g. the Calls refresh button). */
+.hr-card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.hr-card-head .hr-card-title {
+    margin-bottom: 0;
+}
+
 .hr-card-hint {
     margin: -8px 0 14px;
     color: var(--hr-muted);
@@ -282,4 +295,306 @@
     padding: 12px 14px;
     border-radius: 8px;
     font-size: 0.88rem;
+}
+
+/* ---- API Test page ------------------------------------------------------ */
+.hr-api-method {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 4px;
+    margin-right: 8px;
+    letter-spacing: 0.04em;
+    background: #eef2f5;
+    color: var(--hr-muted);
+}
+
+.hr-api-method-get {
+    background: #e8f1fb;
+    color: #1f6fb2;
+}
+
+.hr-api-method-post {
+    background: #e9f7ee;
+    color: #1e7a3d;
+}
+
+.hr-api-fields {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+    margin: 4px 0 8px;
+}
+
+.hr-api-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hr-api-field label {
+    font-size: 0.74rem;
+    color: var(--hr-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.hr-api-input,
+.hr-api-textarea {
+    border: 1px solid var(--hr-border);
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-size: 0.85rem;
+    color: var(--hr-ink);
+    background: #fff;
+    font-family: inherit;
+}
+
+.hr-api-input:focus,
+.hr-api-textarea:focus {
+    outline: none;
+    border-color: var(--hr-accent);
+}
+
+.hr-api-textarea {
+    width: 100%;
+    min-height: 220px;
+    box-sizing: border-box;
+    resize: vertical;
+    line-height: 1.5;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.hr-api-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0 4px;
+    flex-wrap: wrap;
+}
+
+.hr-send-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid var(--hr-accent);
+    background: var(--hr-accent);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.hr-send-btn:hover:not(:disabled) {
+    filter: brightness(1.07);
+}
+
+.hr-send-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.hr-ghost-btn {
+    border: 1px solid var(--hr-border);
+    background: #fff;
+    color: var(--hr-ink);
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.hr-ghost-btn:hover:not(:disabled) {
+    border-color: var(--hr-accent);
+    color: var(--hr-accent);
+}
+
+.hr-ghost-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.hr-json-badge {
+    font-size: 0.76rem;
+    font-weight: 600;
+    padding: 3px 9px;
+    border-radius: 10px;
+}
+
+.hr-json-badge-valid {
+    background: #e7f6ec;
+    color: #1e7a3d;
+}
+
+.hr-json-badge-invalid {
+    background: #fdecea;
+    color: #a31515;
+}
+
+.hr-json-error {
+    font-size: 0.8rem;
+    color: #a31515;
+}
+
+.hr-api-response {
+    margin-top: 16px;
+}
+
+.hr-api-response-label {
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--hr-muted);
+    margin-bottom: 6px;
+}
+
+.hr-api-pending {
+    color: var(--hr-muted);
+    font-size: 0.88rem;
+}
+
+.hr-json-output {
+    margin: 0;
+    background: #0f1b24;
+    color: #d6e2ea;
+    padding: 14px 16px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    overflow: auto;
+    max-height: 440px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+/* ---- Calls page: clickable rows ----------------------------------------- */
+.hr-calls-table tbody tr {
+    cursor: pointer;
+}
+
+/* ---- Call detail drawer (content inside the shared layouts/drawer) ------ */
+.hr-drawer-section {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--hr-border);
+}
+
+.hr-drawer-section:last-child {
+    border-bottom: none;
+}
+
+.hr-drawer-section-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 12px;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--hr-muted);
+}
+
+.hr-drawer-count {
+    background: #eef2f5;
+    color: var(--hr-muted);
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 1px 8px;
+    border-radius: 10px;
+}
+
+.hr-drawer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 18px;
+}
+
+.hr-drawer-field {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.hr-drawer-field-label {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--hr-muted);
+}
+
+.hr-drawer-field-value {
+    font-size: 0.9rem;
+    color: var(--hr-ink);
+}
+
+.hr-drawer-id {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.78rem;
+    background: #eef2f5;
+    padding: 1px 6px;
+    border-radius: 4px;
+    word-break: break-all;
+}
+
+.hr-drawer-empty {
+    color: var(--hr-muted);
+    font-size: 0.88rem;
+    margin: 0;
+}
+
+/* Status pills (sentiment / booked / accepted) */
+.hr-pill {
+    display: inline-block;
+    font-size: 0.76rem;
+    font-weight: 600;
+    padding: 2px 9px;
+    border-radius: 10px;
+    background: #eef2f5;
+    color: var(--hr-muted);
+}
+
+.hr-pill-good {
+    background: #e7f6ec;
+    color: #1e7a3d;
+}
+
+.hr-pill-bad {
+    background: #fdecea;
+    color: #a31515;
+}
+
+/* Negotiation timeline */
+.hr-nego-timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hr-nego-round {
+    border: 1px solid var(--hr-border);
+    border-radius: 8px;
+    padding: 12px 14px;
+    background: #fafbfc;
+}
+
+.hr-nego-round-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.hr-nego-round-num {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--hr-ink);
+}
+
+.hr-nego-round-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
 }

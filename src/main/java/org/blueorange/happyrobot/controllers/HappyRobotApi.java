@@ -34,13 +34,6 @@ public class HappyRobotApi {
         this.loadSearchService = loadSearchService;
     }
 
-    @Authentication()
-    @RequestMapping(value = "/get", method= RequestMethod.GET)
-    public String test() {
-        logger.info("Request received");
-        return "Hello World";
-    }
-
     /**
      * Executes a granular load search. The request body is a {@link Query}: a tree of
      * AND/OR/NOT conditions (full-text, term, numeric and date) with pagination and sorting.

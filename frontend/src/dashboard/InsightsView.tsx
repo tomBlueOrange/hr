@@ -6,6 +6,7 @@ import {BarChart} from "../components/charts/bar/BarChart";
 import {ScatterChart} from "../components/charts/scatter/ScatterChart";
 import {LegendPosition} from "../components/charts/types/ChartTypes";
 import {Skeleton} from "../components/loading/skeleton/Skeleton";
+import {ButtonIcon} from "../components/buttons/button-icon/ButtonIcon";
 
 import {ChartCard} from "./ChartCard";
 import {useApi} from "../hooks/useApi";
@@ -23,6 +24,12 @@ export const InsightsView: React.FC = () => {
             <div className="hr-overview-head">
                 <PageHeading>Insights</PageHeading>
                 <RangeSelector value={range} onChange={setRange} />
+                <ButtonIcon
+                    icon="ri-refresh-line"
+                    label="Refresh"
+                    isDisabled={suggestions.loading}
+                    onClick={suggestions.reload}
+                />
             </div>
 
             {/* Insights summary at the top */}

@@ -7,6 +7,7 @@ import {LineChart} from "../components/charts/line/LineChart";
 import {BarChart} from "../components/charts/bar/BarChart";
 import {LegendPosition} from "../components/charts/types/ChartTypes";
 import {Skeleton} from "../components/loading/skeleton/Skeleton";
+import {ButtonIcon} from "../components/buttons/button-icon/ButtonIcon";
 
 import {ChartCard} from "./ChartCard";
 import {useApi} from "../hooks/useApi";
@@ -20,6 +21,15 @@ export const OverviewView: React.FC = () => {
     const summary = useApi(() => getSummary(range), [range]);
     const bookings = useApi(() => getBookingsTimeline(range), [range]);
     const earnings = useApi(() => getEarningsTimeline(range), [range]);
+
+    const loading = summary.loading || bookings.loading || earnings.loading;
+
+    // Re-fetch every metric on this page (summary KPIs + both timelines).
+    const refresh = () => {
+        summary.reload();
+        bookings.reload();
+        earnings.reload();
+    };
 
     const s = summary.data;
     const bookingRate =
@@ -47,6 +57,12 @@ export const OverviewView: React.FC = () => {
             <div className="hr-overview-head">
                 <PageHeading>Overview</PageHeading>
                 <RangeSelector value={range} onChange={setRange} />
+                <ButtonIcon
+                    icon="ri-refresh-line"
+                    label="Refresh"
+                    isDisabled={loading}
+                    onClick={refresh}
+                />
             </div>
 
             {/* KPI row */}
