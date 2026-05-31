@@ -1,0 +1,230 @@
+[
+  {
+    "loadId": "LD-100001",
+    "startingLocation": "Chicago, IL",
+    "deliveryLocation": "Dallas, TX",
+    "pickupDateTime": "2026-06-02T08:00:00Z",
+    "deliveryDateTime": "2026-06-03T18:00:00Z",
+    "equipmentType": "Dry Van",
+    "loadboardRate": 2450.00,
+    "notes": "No-touch freight. Driver assist not required. Appointment required at delivery.",
+    "weight": 18500.0,
+    "commodityType": ["Packaged Foods", "Canned Goods"],
+    "numOfPieces": 24,
+    "miles": 925.0,
+    "dimensions": {
+      "height": 96,
+      "width": 102,
+      "length": 636
+    }
+  },
+  {
+    "loadId": "LD-100002",
+    "startingLocation": "Los Angeles, CA",
+    "deliveryLocation": "Phoenix, AZ",
+    "pickupDateTime": "2026-06-02T06:30:00Z",
+    "deliveryDateTime": "2026-06-02T20:00:00Z",
+    "equipmentType": "Reefer",
+    "loadboardRate": 1175.00,
+    "notes": "Temperature controlled at 34F. Continuous reefer. Produce load.",
+    "weight": 41000.0,
+    "commodityType": ["Fresh Produce", "Lettuce"],
+    "numOfPieces": 20,
+    "miles": 373.0,
+    "dimensions": {
+      "height": 96,
+      "width": 99,
+      "length": 636
+    }
+  },
+  {
+    "loadId": "LD-100003",
+    "startingLocation": "Atlanta, GA",
+    "deliveryLocation": "Miami, FL",
+    "pickupDateTime": "2026-06-03T09:00:00Z",
+    "deliveryDateTime": "2026-06-04T12:00:00Z",
+    "equipmentType": "Dry Van",
+    "loadboardRate": 1320.00,
+    "notes": "Drop and hook available. FCFS at pickup, appointment at delivery.",
+    "weight": 22000.0,
+    "commodityType": ["Consumer Electronics"],
+    "numOfPieces": 600,
+    "miles": 662.0,
+    "dimensions": {
+      "height": 96,
+      "width": 102,
+      "length": 636
+    }
+  },
+  {
+    "loadId": "LD-100004",
+    "startingLocation": "Houston, TX",
+    "deliveryLocation": "Denver, CO",
+    "pickupDateTime": "2026-06-04T07:00:00Z",
+    "deliveryDateTime": "2026-06-05T16:00:00Z",
+    "equipmentType": "Flatbed",
+    "loadboardRate": 2890.00,
+    "notes": "Tarps and straps required. Oversize permit not needed. Loaded with forklift.",
+    "weight": 44500.0,
+    "commodityType": ["Steel Pipe", "Building Materials"],
+    "numOfPieces": 12,
+    "miles": 1029.0,
+    "dimensions": {
+      "height": 102,
+      "width": 102,
+      "length": 636
+    }
+  },
+  {
+    "loadId": "LD-100005",
+    "startingLocation": "Seattle, WA",
+    "deliveryLocation": "Portland, OR",
+    "pickupDateTime": "2026-06-02T10:00:00Z",
+    "deliveryDateTime": "2026-06-02T15:30:00Z",
+    "equipmentType": "Reefer",
+    "loadboardRate": 685.00,
+    "notes": "Frozen seafood. Set to -10F. Lumper fee reimbursed with receipt.",
+    "weight": 38000.0,
+    "commodityType": ["Frozen Seafood"],
+    "numOfPieces": 18,
+    "miles": 174.0,
+    "dimensions": {
+      "height": 96,
+      "width": 99,
+      "length": 636
+    }
+  },
+  {
+    "loadId": "LD-100006",
+    "startingLocation": "Newark, NJ",
+    "deliveryLocation": "Boston, MA",
+    "pickupDateTime": "2026-06-03T11:00:00Z",
+    "deliveryDateTime": "2026-06-03T19:00:00Z",
+    "equipmentType": "Dry Van",
+    "loadboardRate": 920.00,
+    "notes": "High value freight, sealed trailer required. Team not necessary.",
+    "weight": 15500.0,
+    "commodityType": ["Apparel", "Footwear"],
+    "numOfPieces": 310,
+    "miles": 224.0,
+    "dimensions": {
+      "height": 96,
+      "width": 102,
+      "length": 636
+    }
+  },
+  {
+    "loadId": "LD-100007",
+    "startingLocation": "Memphis, TN",
+    "deliveryLocation": "Kansas City, MO",
+    "pickupDateTime": "2026-06-04T08:30:00Z",
+    "deliveryDateTime": "2026-06-04T21:00:00Z",
+    "equipmentType": "Dry Van",
+    "loadboardRate": 1050.00,
+    "notes": "Palletized freight. Driver counts pieces. Detention paid after 2 hours.",
+    "weight": 26500.0,
+    "commodityType": ["Auto Parts"],
+    "numOfPieces": 16,
+    "miles": 452.0,
+    "dimensions": {
+      "height": 96,
+      "width": 102,
+      "length": 636
+    }
+  },
+  {
+    "loadId": "LD-100008",
+    "startingLocation": "Salt Lake City, UT",
+    "deliveryLocation": "Las Vegas, NV",
+    "pickupDateTime": "2026-06-05T06:00:00Z",
+    "deliveryDateTime": "2026-06-05T17:00:00Z",
+    "equipmentType": "Flatbed",
+    "loadboardRate": 1480.00,
+    "notes": "Step deck preferred. Machinery secured with chains. Dunnage provided.",
+    "weight": 39500.0,
+    "commodityType": ["Industrial Machinery"],
+    "numOfPieces": 3,
+    "miles": 421.0,
+    "dimensions": {
+      "height": 110,
+      "width": 102,
+      "length": 636
+    }
+  },
+  {
+    "loadId": "LD-100009",
+    "startingLocation": "Minneapolis, MN",
+    "deliveryLocation": "Chicago, IL",
+    "pickupDateTime": "2026-06-03T07:30:00Z",
+    "deliveryDateTime": "2026-06-03T16:00:00Z",
+    "equipmentType": "Reefer",
+    "loadboardRate": 1240.00,
+    "notes": "Dairy products. Reefer set to 36F. Multi-stop, two delivery appointments.",
+    "weight": 40000.0,
+    "commodityType": ["Dairy", "Refrigerated Goods"],
+    "numOfPieces": 22,
+    "miles": 408.0,
+    "dimensions": {
+      "height": 96,
+      "width": 99,
+      "length": 636
+    }
+  },
+  {
+    "loadId": "LD-100010",
+    "startingLocation": "Charlotte, NC",
+    "deliveryLocation": "Nashville, TN",
+    "pickupDateTime": "2026-06-04T09:00:00Z",
+    "deliveryDateTime": "2026-06-04T18:30:00Z",
+    "equipmentType": "Dry Van",
+    "loadboardRate": 875.00,
+    "notes": "Light load, partial trailer. Liftgate not required. Dock high delivery.",
+    "weight": 9800.0,
+    "commodityType": ["Furniture"],
+    "numOfPieces": 45,
+    "miles": 409.0,
+    "dimensions": {
+      "height": 96,
+      "width": 102,
+      "length": 636
+    }
+  },
+  {
+    "loadId": "LD-100011",
+    "startingLocation": "Detroit, MI",
+    "deliveryLocation": "Indianapolis, IN",
+    "pickupDateTime": "2026-06-05T08:00:00Z",
+    "deliveryDateTime": "2026-06-05T15:00:00Z",
+    "equipmentType": "Flatbed",
+    "loadboardRate": 760.00,
+    "notes": "Coil load, coil racks required. Tarping needed. Loaded center of trailer.",
+    "weight": 43000.0,
+    "commodityType": ["Steel Coil"],
+    "numOfPieces": 2,
+    "miles": 290.0,
+    "dimensions": {
+      "height": 100,
+      "width": 102,
+      "length": 636
+    }
+  },
+  {
+    "loadId": "LD-100012",
+    "startingLocation": "Oakland, CA",
+    "deliveryLocation": "Reno, NV",
+    "pickupDateTime": "2026-06-02T12:00:00Z",
+    "deliveryDateTime": "2026-06-02T22:00:00Z",
+    "equipmentType": "Dry Van",
+    "loadboardRate": 940.00,
+    "notes": "Beverage load. Heavy, max out weight. Slip seat not allowed.",
+    "weight": 44800.0,
+    "commodityType": ["Bottled Beverages", "Packaged Foods"],
+    "numOfPieces": 26,
+    "miles": 218.0,
+    "dimensions": {
+      "height": 96,
+      "width": 102,
+      "length": 636
+    }
+  }
+]
